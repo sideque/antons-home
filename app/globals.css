@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #f5f5f0;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+}
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Better anchor positioning under fixed navbar */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* Smooth image / card interactions */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbar where horizontal motion is used */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Subtle page texture */
+.page-texture {
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.035) 0.7px,
+    transparent 0.7px
+  );
+  background-size: 8px 8px;
+}
