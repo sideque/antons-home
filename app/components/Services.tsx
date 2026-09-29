@@ -50,17 +50,23 @@ export default function Services() {
             <p className="text-xs uppercase tracking-[0.2em] text-white/35">
               What we do
             </p>
-  <img
-    src="/images/Logo.png"
-    alt="Antons"
-    className="h-48 w-48 object-contain md:h-56 md:w-56 lg:h-64 lg:w-64"
-  />
+  <motion.img
+  src="/images/Logo.png"
+  alt="Antons"
+  animate={{
+    y: [0, -10, 0],
+    rotate: [0, -1.5, 0],
+  }}
+  transition={{
+    duration: 7,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="mt-20 h-44 w-44 object-contain md:h-56 md:w-56 lg:h-64 lg:w-64"
+/>
           </div>
-
-          
-
           <div>
-            <h2 className="max-w-4xl text-4xl font-medium leading-[1.05] tracking-[-0.04em] md:text-6xl">
+            <h2 className="max-w-4xl text-[clamp(2.8rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
               Recruitment solutions
               <br />
               built around
@@ -87,7 +93,7 @@ export default function Services() {
                 duration: 0.6,
                 delay: index * 0.08,
               }}
-              className="group relative grid grid-cols-[45px_1fr_auto] items-center gap-5 border-b border-white/10 py-7 transition-colors duration-300 hover:bg-white/[0.035] md:grid-cols-[80px_1fr_1fr_auto] md:gap-8 md:py-9"
+             className="group relative grid grid-cols-[45px_1fr_auto] items-center gap-5 border-b border-white/10 py-8 transition-colors duration-300 hover:bg-white/[0.035] md:grid-cols-[80px_1fr_1fr_auto] md:gap-8 md:py-10"
             >
               {/* Number */}
               <span className="text-xs text-white/30">

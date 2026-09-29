@@ -43,11 +43,20 @@ export default function About() {
               About Antons
             </p>
 
-              <img
-                src="/images/Logo.png"
-                alt="Antons"
-                className="h-48 w-48 object-contain opacity-90 lg:h-64 lg:w-64"
-              />
+             <motion.img
+              src="/images/Logo.png"
+              alt="Antons"
+              animate={{
+                y: [0, -8, 0],
+                rotate: [0, 1.5, 0],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="mt-20 h-48 w-48 object-contain opacity-90 md:h-56 md:w-56 lg:h-72 lg:w-72"
+            />
           </div>
           </motion.div>
 
@@ -57,7 +66,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="max-w-5xl text-4xl font-medium leading-[1.05] tracking-[-0.04em] md:text-6xl">
+            <h2 className="max-w-5xl text-[clamp(2.8rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
               Talent is more than a
               <span className="text-black/35"> vacancy.</span>
               <br />
@@ -97,7 +106,7 @@ export default function About() {
           >
             <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full border border-black/10" />
 
-            <div className="relative overflow-hidden rounded-[2rem] bg-[#dfe4db] p-7">
+            {/* <div className="relative overflow-hidden rounded-[2rem] bg-[#dfe4db] p-7">
               <img
                 src="/images/Logo.png"
                 alt=""
@@ -111,60 +120,79 @@ export default function About() {
                   Market intelligence
                 </h3>
               </div>
+            </div> */}
+
+            <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="group relative min-h-[280px] overflow-hidden rounded-[2rem] bg-[#dfe4db] p-7"
+          >
+            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full border border-black/10 transition duration-700 group-hover:scale-125" />
+
+            <img
+              src="/images/Logo.png"
+              alt=""
+              className="absolute right-6 top-6 h-20 w-20 object-contain opacity-25 transition duration-500 group-hover:scale-110"
+            />
+
+            <div className="relative flex min-h-[220px] flex-col justify-end">
+              <span className="text-4xl font-light">01</span>
+
+              <h3 className="mt-3 text-sm font-medium">
+                Market intelligence
+              </h3>
             </div>
           </motion.div>
+          </motion.div>
 
-          <motion.div
+         <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="relative min-h-[280px] overflow-hidden rounded-[2rem] bg-[#191b19] p-7 text-white"
+            className="group relative min-h-[280px] overflow-hidden rounded-[2rem] bg-[#191b19] p-7 text-white"
           >
-            <div className="absolute right-8 top-8 h-28 w-28 rounded-full border border-white/10" />
+            <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full border border-white/10 transition duration-700 group-hover:scale-125" />
 
-            <div className="relative overflow-hidden rounded-[2rem] bg-[#171a18] p-7 text-white">
-              <img
-                src="/images/Logo2.png"
-                alt=""
-                className="absolute right-6 top-6 h-16 w-16 object-contain opacity-20"
-              />
+            <img
+              src="/images/Logo.png"
+              alt=""
+              className="absolute right-6 top-6 h-20 w-20 object-contain opacity-20 transition duration-500 group-hover:scale-110"
+            />
 
-              <div className="relative flex min-h-[220px] flex-col justify-end">
-                <span className="text-4xl font-light">02</span>
+            <div className="relative flex min-h-[220px] flex-col justify-end">
+              <span className="text-4xl font-light">02</span>
 
-                <h3 className="mt-3 text-sm font-medium">
-                  Specialist expertise
-                </h3>
-              </div>
+              <h3 className="mt-3 text-sm font-medium">
+                Specialist expertise
+              </h3>
             </div>
           </motion.div>
 
-          <motion.div
+         <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="relative min-h-[280px] overflow-hidden rounded-[2rem] bg-[#e8e5dc] p-7"
+            className="group relative min-h-[280px] overflow-hidden rounded-[2rem] bg-[#dfe4db] p-7"
           >
-            <div className="absolute bottom-[-50px] right-[-30px] h-52 w-52 rounded-full border border-black/10" />
+            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full border border-black/10 transition duration-700 group-hover:scale-125" />
 
-            <div className="relative overflow-hidden rounded-[2rem] bg-[#e8e5dc] p-7">
-                <img
-                  src="/images/Logo.png"
-                  alt=""
-                  className="absolute right-6 top-6 h-16 w-16 object-contain opacity-25"
-                />
+            <img
+              src="/images/Logo.png"
+              alt=""
+              className="absolute right-6 top-6 h-20 w-20 object-contain opacity-25 transition duration-500 group-hover:scale-110"
+            />
 
-                <div className="relative flex min-h-[220px] flex-col justify-end">
-                  <span className="text-4xl font-light">03</span>
+            <div className="relative flex min-h-[220px] flex-col justify-end">
+              <span className="text-4xl font-light">03</span>
 
-                  <h3 className="mt-3 text-sm font-medium">
-                    Long-term partnerships
-                  </h3>
-                </div>
-              </div>
+              <h3 className="mt-3 text-sm font-medium">
+                Long-term partnerships
+              </h3>
+            </div>
           </motion.div>
+
 
         </div>
       </div>
