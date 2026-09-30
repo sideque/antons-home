@@ -6,19 +6,19 @@ import { ArrowUpRight } from "lucide-react";
 const articles = [
   {
     category: "Talent",
-    date: "08 Sep 2026",
+    date: "Latest insight",
     title: "Building leadership teams for the next stage of growth",
     image: "/images/Logo.png",
   },
   {
     category: "GCC Insights",
-    date: "26 Aug 2026",
+    date: "Latest insight",
     title: "What exceptional talent looks for in a growing market",
     image: "/images/Logo.png",
   },
   {
     category: "Executive Search",
-    date: "14 Aug 2026",
+    date: "Latest insight",
     title: "Why the right leadership appointment matters",
     image: "/images/Logo.png",
   },
@@ -38,7 +38,7 @@ export default function Insights() {
               Insights
             </p>
 
-            <h2 className="mt-5 max-w-2xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
+            <h2 className="mt-5 max-w-2xl text-[clamp(2.8rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
               Ideas for
               <span className="text-black/30"> ambitious</span>
               <br />
@@ -67,13 +67,13 @@ export default function Insights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group"
+              className="group cursor-pointer"
             >
-          <div className="group relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-[#dfe3da]">
+          <div className="group relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-[#dfe3da] transition-transform duration-500 hover:-translate-y-1">
             <img
                 src={article.image}
                 alt={article.title}
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                className="h-full w-full object-contain p-16 transition duration-700 group-hover:scale-110"
             />
 
             <div className="absolute inset-0 bg-black/10 transition group-hover:bg-black/5" />
@@ -92,7 +92,7 @@ export default function Insights() {
                   {article.date}
                 </p>
 
-                <h3 className="mt-3 text-xl font-medium leading-tight tracking-tight transition-colors group-hover:text-black/60">
+                <h3 className="mt-3 text-xl font-medium leading-tight tracking-tight transition-all duration-300 group-hover:translate-x-1 group-hover:text-black/60">
                   {article.title}
                 </h3>
 

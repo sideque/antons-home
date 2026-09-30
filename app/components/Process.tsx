@@ -60,7 +60,7 @@ export default function Process() {
               Our process
             </p>
 
-            <h2 className="mt-6 max-w-md text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
+            <h2 className="mt-6 max-w-md text-[clamp(2.8rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
               A thoughtful
               <br />
               approach to
@@ -84,7 +84,7 @@ export default function Process() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.55, delay: index * 0.08 }}
-                  className="group grid grid-cols-[45px_1fr_auto] gap-4 border-b border-black/10 py-7 md:grid-cols-[65px_1fr_45px] md:gap-7 md:py-8"
+                  className="group grid grid-cols-[45px_1fr_auto] gap-4 border-b border-black/10 py-8 transition-all duration-300 hover:px-2 md:grid-cols-[65px_1fr_45px] md:gap-7 md:py-9"
                 >
                   <span className="pt-1 text-xs text-black/30">
                     {step.number}
@@ -95,12 +95,12 @@ export default function Process() {
                       {step.title}
                     </h3>
 
-                    <p className="mt-2 max-w-lg text-sm leading-6 text-black/45">
+                    <p className="mt-3 max-w-lg text-sm leading-6 text-black/50">
                       {step.description}
                     </p>
                   </div>
 
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 transition-all duration-300 group-hover:bg-black group-hover:text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 transition-all duration-300 group-hover:bg-black group-hover:text-white group-hover:scale-105">
                     <Icon size={17} strokeWidth={1.5} />
                   </div>
                 </motion.div>

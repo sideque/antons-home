@@ -54,10 +54,10 @@ export default function Footer() {
             </p>
 
             <a
-              href="mailto:hello@antons.example"
+              href="mailto:info@antons.ae"
               className="group mt-5 flex w-fit items-center gap-2 text-sm text-white/70"
             >
-              hello@antons.example
+              info@antons.ae
 
               <ArrowUpRight
                 size={15}
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 text-[11px] text-white/25 md:flex-row">
-          <p>© 2026 Antons. Dummy content for design presentation.</p>
+          <p>© 2026 Antons. All rights reserved.</p>
 
           <div className="flex gap-6">
             <span>Privacy</span>

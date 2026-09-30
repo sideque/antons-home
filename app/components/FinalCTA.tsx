@@ -39,7 +39,7 @@ export default function FinalCTA() {
           </p>
 
           <a
-            href="mailto:hello@antons.example"
+            href="mailto:info@antons.ae"
             className="group flex w-fit items-center gap-3 rounded-full bg-black px-7 py-4 text-sm font-medium text-white transition hover:scale-[1.02]"
           >
             Talk to an expert

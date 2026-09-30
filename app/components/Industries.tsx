@@ -6,25 +6,47 @@ import {
   Plane,
   Building2,
   Cpu,
-  HeartPulse,
   Factory,
   Truck,
-  Utensils,
-  Zap,
   ShoppingBag,
 } from "lucide-react";
 
 const industries = [
-  { name: "Technology", icon: Cpu },
-  { name: "Banking & Finance", icon: Building2 },
-  { name: "Real Estate", icon: Building2 },
-  { name: "Healthcare", icon: HeartPulse },
-  { name: "Logistics", icon: Truck },
-  { name: "Manufacturing", icon: Factory },
-  { name: "Aviation", icon: Plane },
-  { name: "Hospitality", icon: Utensils },
-  { name: "Energy", icon: Zap },
-  { name: "Retail", icon: ShoppingBag },
+  {
+    number: "01",
+    name: "IT & Technology",
+    icon: Cpu,
+  },
+  {
+    number: "02",
+    name: "Wholesale & Retail",
+    icon: ShoppingBag,
+  },
+  {
+    number: "03",
+    name: "Accounting & Finance",
+    icon: Building2,
+  },
+  {
+    number: "04",
+    name: "Real Estate & Development",
+    icon: Building2,
+  },
+  {
+    number: "05",
+    name: "Supply Chain & Logistics",
+    icon: Truck,
+  },
+  {
+    number: "06",
+    name: "Manufacturing",
+    icon: Factory,
+  },
+  {
+    number: "07",
+    name: "Aviation & Aerospace",
+    icon: Plane,
+  },
 ];
 
 export default function Industries() {
@@ -58,7 +80,7 @@ export default function Industries() {
         </div>
 
         {/* Industry grid */}
-        <div className="mt-20 grid grid-cols-2 border-l border-t border-black/10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-20 grid grid-cols-2 border-l border-t border-black/10 sm:grid-cols-2 lg:grid-cols-4">
           {industries.map((industry, index) => {
             const Icon = industry.icon;
 
@@ -87,7 +109,7 @@ export default function Industries() {
 
                 <div>
                   <span className="text-[10px] uppercase tracking-[0.18em] text-black/30 group-hover:text-white/35">
-                    0{index + 1}
+                    {industry.number}
                   </span>
 
                   <h3 className="mt-2 text-lg font-medium tracking-tight">

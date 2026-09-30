@@ -34,6 +34,12 @@ const services = [
     description:
       "Strategic people leadership and HR expertise when you need it most.",
   },
+  {
+    number: "06",
+    title: "Emiratization & Saudization",
+    description:
+      "Supporting organisations with tailored talent strategies aligned with Emiratization and Saudization requirements.",
+  },
 ];
 
 export default function Services() {
@@ -81,7 +87,7 @@ export default function Services() {
         </div>
 
         {/* Services */}
-        <div className="mt-20 border-t border-white/10">
+        <div className="mt-16 border-t border-white/10">
           {services.map((service, index) => (
             <motion.a
               href="#contact"

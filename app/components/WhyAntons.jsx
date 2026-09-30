@@ -12,22 +12,22 @@ const features = [
   {
     icon: Globe2,
     title: "GCC Market Expertise",
-    text: "Deep understanding of regional markets, talent movements and business needs.",
+    text: "Sector specialists with a deep understanding of the GCC market and the talent landscape across the region.",
   },
   {
     icon: Network,
     title: "Global Talent Network",
-    text: "Access to a broad network of professionals across specialist functions and markets.",
+    text: "Connecting talent with opportunity across borders through a broad international recruitment network.",
   },
   {
     icon: Sparkles,
-    title: "Specialist Expertise",
-    text: "Industry-focused recruitment built around the realities of each sector.",
+    title: "Sector Specialists",
+    text: "Industry-focused recruitment expertise built around the realities and requirements of each sector.",
   },
   {
     icon: ShieldCheck,
     title: "Confidential Search",
-    text: "A discreet and considered approach for sensitive and executive-level appointments.",
+    text: "Discreet executive search combining market intelligence, executive assessment and targeted outreach.",
   },
 ];
 
@@ -96,9 +96,8 @@ export default function WhyAntons() {
           className="mt-24 border-t border-black/10 pt-8"
         >
           <p className="max-w-4xl text-xl leading-8 tracking-tight text-black/65 md:text-3xl md:leading-[1.35]">
-            We build relationships that go beyond a single placement —
-            creating talent partnerships designed to support long-term
-            business growth.
+            We go beyond filling positions — providing strategic guidance to
+            help organisations align the right talent with their business goals.
           </p>
         </motion.div>
 

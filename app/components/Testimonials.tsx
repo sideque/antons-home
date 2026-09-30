@@ -54,7 +54,7 @@ export default function Testimonials() {
               Client perspective
             </p>
 
-            <h2 className="mt-5 max-w-2xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
+            <h2 className="mt-5 max-w-2xl text-[clamp(2.8rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
               Partnerships that
               <br />
               create
@@ -66,7 +66,7 @@ export default function Testimonials() {
             <button
               onClick={previous}
               aria-label="Previous testimonial"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition hover:bg-white hover:text-black"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all duration-300 hover:scale-105 hover:bg-white hover:text-black"
             >
               <ArrowLeft size={17} />
             </button>
@@ -83,9 +83,9 @@ export default function Testimonials() {
 
         <motion.div
           key={active}
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45 }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
           className="mt-20 grid gap-10 border-t border-white/10 pt-12 md:grid-cols-[80px_1fr]"
         >
           <Quote
