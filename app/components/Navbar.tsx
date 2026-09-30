@@ -5,11 +5,11 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Industries", href: "#industries" },
-  { label: "Insights", href: "#insights" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Insights", href: "/blogs" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -23,60 +23,55 @@ export default function Navbar() {
         transition={{ duration: 0.7 }}
         className="fixed left-0 top-0 z-50 w-full px-4 py-4 md:px-8 md:py-5"
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-black/10 bg-white/80 px-4 py-3 shadow-sm backdrop-blur-xl md:px-5">
+        <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between rounded-full border border-black/10 bg-white/80 px-4 shadow-sm backdrop-blur-xl md:px-5">
 
-          {/* Logo */}
-          <a
-            href="/"
-            onClick={() => setOpen(false)}
-            className="flex items-center gap-2.5"
-            >
-            <img
-                src="/images/Logo.png"
-                alt="Antons"
-                className="h-10 w-10 object-contain"
-            />
+  {/* Logo */}
+  <a
+    href="/"
+    onClick={() => setOpen(false)}
+    className="flex h-full items-center"
+  >
+    <img
+      src="/images/Logo.png"
+      alt="Antons"
+      className="h-[68px] w-[68px] object-contain"
+    />
+  </a>
 
-            <span className="text-[20px] font-semibold tracking-[-0.04em]">
-                Antons
-            </span>
-            </a>
+  {/* Desktop Links */}
+  <div className="hidden items-center gap-7 lg:flex">
+    {links.map((link) => (
+      <a
+        key={link.label}
+        href={link.href}
+        className="text-sm text-black/60 transition hover:text-black"
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
 
-          {/* Desktop Links */}
-          <div className="hidden items-center gap-7 lg:flex">
-            {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm text-black/60 transition hover:text-black"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+  {/* Desktop CTA */}
+  <a
+    href="#contact"
+    className="group hidden items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-black/80 md:flex"
+  >
+    Hire Talent
+    <ArrowUpRight
+      size={16}
+      className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+    />
+  </a>
 
-          {/* Desktop CTA */}
-          <a
-            href="#contact"
-            className="group hidden items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-black/80 md:flex"
-          >
-            Hire Talent
-
-            <ArrowUpRight
-              size={16}
-              className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-            />
-          </a>
-
-          {/* Mobile button */}
-          <button
-            onClick={() => setOpen(!open)}
-            aria-label="Toggle navigation"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 lg:hidden"
-          >
-            {open ? <X size={19} /> : <Menu size={19} />}
-          </button>
-        </nav>
+  {/* Mobile button */}
+  <button
+    onClick={() => setOpen(!open)}
+    aria-label="Toggle navigation"
+    className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 lg:hidden"
+  >
+    {open ? <X size={19} /> : <Menu size={19} />}
+  </button>
+</nav>
       </motion.header>
 
       {/* Mobile menu */}

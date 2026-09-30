@@ -2,7 +2,15 @@
 
 import { ArrowUpRight } from "lucide-react";
 
-const links = ["About", "Services", "Industries", "Insights", "Contact"];
+const links = [
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Insights", href: "/blogs" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact", href: "/contact" },
+];
+
 
 export default function Footer() {
   return (
@@ -12,16 +20,12 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
 
           <div>
-            <div className="flex items-center gap-2">
-               <img
-                src="/images/Logo.png"
+            <div className="flex items-center">
+              <img
+                src="/images/Logo2.webp"
                 alt="Antons"
-                className="h-10 w-10 object-contain"
-            />
-
-              <span className="text-lg font-semibold tracking-tight">
-                Ant<span className="text-white/40">ons</span>
-              </span>
+                className="h-20 w-20 object-contain"
+              />
             </div>
 
             <p className="mt-6 max-w-sm text-sm leading-6 text-white/35">
@@ -38,11 +42,11 @@ export default function Footer() {
             <div className="mt-5 flex flex-col gap-3">
               {links.map((link) => (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                  key={link.label}
+                  href={link.href}
                   className="w-fit text-sm text-white/60 transition hover:text-white"
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
             </div>
@@ -69,6 +73,7 @@ export default function Footer() {
               Dubai, United Arab Emirates
             </p>
           </div>
+
         </div>
 
         <div className="mt-16 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 text-[11px] text-white/25 md:flex-row">
