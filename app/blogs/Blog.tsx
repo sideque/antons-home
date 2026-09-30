@@ -1,272 +1,272 @@
 "use client";
 
+import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, CalendarDays } from "lucide-react";
 
 const articles = [
   {
-    category: "Talent",
-    date: "08 Sep 2026",
-    title: "Building leadership teams for the next stage of growth",
-    description:
-      "How organisations can build leadership teams capable of supporting sustainable growth.",
-  },
-  {
-    category: "GCC Insights",
-    date: "26 Aug 2026",
-    title: "What exceptional talent looks for in a growing market",
-    description:
-      "Understanding what attracts high-performing professionals in today's competitive market.",
-  },
-  {
-    category: "Executive Search",
-    date: "14 Aug 2026",
-    title: "Why the right leadership appointment matters",
-    description:
-      "The impact that a carefully considered senior appointment can have on an organisation.",
-  },
-  {
+    date: "18 Sep 2025",
     category: "Recruitment",
-    date: "02 Aug 2026",
-    title: "Building stronger teams through specialist recruitment",
-    description:
-      "Why focused expertise can make a difference when hiring for critical positions.",
+    title: "5 Recruitment Challenges Dubai Tech Employers Face in 2025",
+    excerpt:
+      "The tech industry in Dubai is growing rapidly. From AI-driven solutions to cloud transformation, companies are racing to innovate while hiring the right talent becomes increasingly challenging.",
+    href: "https://antons.ae/blogs/5-recruitment-challenges-dubai-tech-employers-face-in-2025/",
+    image: "/images/blogsImg/one.webp",
+    imageAlt:
+      "Technology team collaborating in a modern Dubai office during a hiring discussion",
   },
   {
+    date: "05 Aug 2025",
+    category: "Talent",
+    title:
+      "Why your competitors are hiring top talent faster and the recruitment metrics behind it!",
+    excerpt:
+      "In the UAE's dynamic business environment, some organisations consistently fill roles faster than others. Discover the recruitment metrics behind that difference.",
+    href: "https://antons.ae/blogs/why-your-competitors-are-hiring-top-talent-faster/",
+    image: "/images/blogsImg/two.webp",
+    imageAlt: "Recruitment team reviewing hiring metrics on a dashboard",
+  },
+  {
+    date: "02 Aug 2024",
     category: "GCC Insights",
-    date: "21 Jul 2026",
-    title: "Navigating talent across the GCC",
-    description:
-      "A closer look at the changing talent landscape across the Gulf region.",
+    title: "UAE Job Market Update (August 2024)",
+    excerpt:
+      "An overview of the UAE job market and the sectors showing positive signs of growth, including continued demand for skilled technology professionals.",
+    href: "https://antons.ae/blogs/uae-job-market-update-august-2024/",
+    image: "/images/blogsImg/jobs.webp",
+    imageAlt: "Dubai skyline representing the UAE business and job market",
   },
   {
-    category: "Leadership",
-    date: "09 Jul 2026",
-    title: "The qualities of exceptional business leaders",
-    description:
-      "Exploring the qualities organisations look for when appointing their next generation of leaders.",
+    date: "07 Jun 2024",
+    category: "GCC Insights",
+    title: "The Rise of Fintech in the UAE: A Land of Opportunity for Professionals",
+    excerpt:
+      "The UAE has rapidly become a global hub for financial technology, creating new opportunities for professionals across the growing fintech ecosystem.",
+    href: "https://antons.ae/blogs/the-rise-of-fintech-in-the-uae/",
+    image: "/images/blogsImg/three.webp",
+    imageAlt: "Financial professionals analysing fintech growth data",
+  },
+  {
+    date: "30 Mar 2024",
+    category: "Business",
+    title: "Laying Foundations: Setting Up Business in Dubai",
+    excerpt:
+      "Dubai's strategic location and economic environment continue to attract entrepreneurs looking to establish and grow service businesses.",
+    href: "https://antons.ae/blogs/laying-foundations-setting-up-business-in-dubai/",
+    image: "/images/blogsImg/four.webp",
+    imageAlt: "Entrepreneurs meeting to plan a new business setup in Dubai",
+  },
+  {
+    date: "25 Mar 2024",
+    category: "Careers",
+    title:
+      "Navigating the Job Market in Dubai: An Overview for Newcomers (2024 – 2025)",
+    excerpt:
+      "An overview of Dubai's dynamic job market, economic landscape and opportunities across different sectors for professionals entering the region.",
+    href: "https://antons.ae/blogs/navigating-the-job-market-in-dubai/",
+    image: "/images/blogsImg/five.webp",
+    imageAlt: "Professional walking through a modern Dubai business district",
   },
 ];
 
+const [featured, ...rest] = articles;
 
-const Blog = () => {
-   return (
-    <main className="bg-[#f5f5f0] text-[#111311]">
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  show: { opacity: 1, y: 0 },
+};
 
-      {/* HERO */}
-      <section className="px-5 pb-24 pt-36 md:px-8 md:pb-32 md:pt-44">
+export default function BlogsPage() {
+  return (
+    <main className="min-h-screen overflow-x-hidden bg-[#f5f5f0] text-[#111311]">
+      {/* Hero */}
+      <section className="px-5 pb-16 pt-40 md:px-8 md:pb-20 md:pt-48">
         <div className="mx-auto max-w-7xl">
-
-          <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
-
-            <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
-                Insights
-              </p>
-
-              <img
-                src="/images/Logo.png"
-                alt="Antons"
-                className="mt-16 h-40 w-40 object-contain md:h-52 md:w-52"
-              />
-            </div>
-
+          <div className="grid gap-14 lg:grid-cols-[0.85fr_1fr] lg:items-center">
+            {/* Left: eyebrow, headline, description */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              initial="hidden"
+              animate="show"
+              variants={{
+                show: { transition: { staggerChildren: 0.09 } },
+              }}
             >
-              <h1 className="max-w-5xl text-5xl font-medium leading-[0.96] tracking-[-0.055em] md:text-7xl lg:text-[6.5rem]">
-                Ideas,
-                <br />
-                insights &
-                <span className="text-black/30"> perspectives.</span>
-              </h1>
+              <motion.p
+                variants={fadeUp}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="text-xs uppercase tracking-[0.22em] text-black/40"
+              >
+                Insights
+              </motion.p>
 
-              <p className="mt-10 max-w-2xl text-base leading-7 text-black/55 md:text-lg">
-                Perspectives on talent, leadership, recruitment and the
-                evolving business landscape across the GCC.
-              </p>
+              <motion.h1
+                variants={fadeUp}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="mt-8 max-w-xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] md:text-7xl"
+              >
+                Ideas for
+                <br />
+                <span className="text-black/30">ambitious</span> businesses.
+              </motion.h1>
+
+              <motion.p
+                variants={fadeUp}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="mt-8 max-w-md text-base leading-7 text-black/55 md:text-lg"
+              >
+                Insights, perspectives and market intelligence on talent,
+                recruitment and the changing business landscape across the
+                UAE and GCC.
+              </motion.p>
             </motion.div>
 
+            {/* Right: premium visual composition */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+              className="relative aspect-[4/3] w-full"
+            >
+              {/* soft circular accent shapes */}
+              <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#8a998f]/15 blur-2xl md:h-56 md:w-56" />
+              <div className="pointer-events-none absolute -bottom-8 -left-8 h-32 w-32 rounded-full border border-black/10" />
+
+              {/* image plate */}
+              <div className="relative h-full w-full overflow-hidden rounded-[28px] border border-black/10 bg-[#e9e9e2]">
+                <img
+                  src="/images/blogsImg/dubaiTech.webp"
+                  alt="Antons consultants advising a client in a modern Dubai boardroom"
+                  className="h-full w-full object-cover opacity-90"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+              </div>
+
+              {/* logo mark, layered on top */}
+              <div className="absolute bottom-6 left-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-black/10 bg-[#f5f5f0]/90 backdrop-blur-sm md:h-24 md:w-24">
+                <img
+                  src="/images/Logo.png"
+                  alt="Antons"
+                  className="h-10 w-10 object-contain opacity-80 md:h-12 md:w-12"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* FEATURED ARTICLE */}
-      <section className="px-5 pb-28 md:px-8 md:pb-40">
+      {/* Featured article */}
+      <section className="px-5 pb-20 md:px-8 md:pb-24">
         <div className="mx-auto max-w-7xl">
-
-          <motion.article
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="group grid overflow-hidden rounded-[2.5rem] bg-[#111311] text-white lg:grid-cols-[1.15fr_0.85fr]"
+          <motion.a
+            href={featured.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeUp}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="group grid gap-8 rounded-[28px] border border-black/10 p-4 transition-colors hover:bg-black/[0.02] md:grid-cols-[1.15fr_1fr] md:items-center md:gap-10 md:p-6"
           >
-            <div className="relative min-h-[420px] overflow-hidden bg-[#252a25]">
-
+            {/* Image */}
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[24px] bg-[#e9e9e2] md:aspect-[16/10]">
               <img
-                src="/images/Logo2.png"
-                alt=""
-                className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 object-contain opacity-10 transition duration-700 group-hover:scale-110"
+                src={featured.image}
+                alt={featured.imageAlt}
+                className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
               />
-
-              <div className="absolute left-7 top-7 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-[10px] uppercase tracking-[0.18em] backdrop-blur-md">
-                Featured insight
-              </div>
-
-              <div className="absolute bottom-7 left-7 text-sm text-white/40">
-                Antons Insights
-              </div>
+              <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/[0.04]" />
             </div>
 
-            <div className="flex flex-col justify-between p-8 md:p-12 lg:p-14">
-
-              <div>
-                <div className="flex items-center gap-3 text-xs text-white/35">
-                  <span>Talent</span>
-                  <span className="h-1 w-1 rounded-full bg-white/20" />
-                  <span>08 Sep 2026</span>
-                </div>
-
-                <h2 className="mt-7 text-3xl font-medium leading-[1.05] tracking-tight md:text-5xl">
-                  Building leadership teams for the next stage of growth
-                </h2>
-
-                <p className="mt-7 text-sm leading-6 text-white/40 md:text-base">
-                  How organisations can build leadership teams capable of
-                  supporting sustainable growth.
-                </p>
+            {/* Content */}
+            <div className="px-2 md:px-4">
+              <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-black/35">
+                <span>{featured.category}</span>
+                <span className="h-1 w-1 rounded-full bg-black/20" />
+                <span>{featured.date}</span>
               </div>
 
-              <a
-                href="#"
-                className="group mt-12 flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black"
-              >
-                Read article
+              <h2 className="mt-5 max-w-xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+                {featured.title}
+              </h2>
 
-                <ArrowUpRight
-                  size={17}
-                  className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-                />
-              </a>
-
-            </div>
-          </motion.article>
-
-        </div>
-      </section>
-
-      {/* ARTICLES */}
-      <section className="border-t border-black/10 px-5 py-28 md:px-8 md:py-40">
-        <div className="mx-auto max-w-7xl">
-
-          <div className="flex items-end justify-between gap-6">
-            <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
-                Latest insights
+              <p className="mt-5 max-w-lg text-sm leading-6 text-black/50 md:text-base">
+                {featured.excerpt}
               </p>
 
-              <h2 className="mt-5 text-4xl font-medium tracking-[-0.045em] md:text-6xl">
-                Explore our
-                <span className="text-black/30"> thinking.</span>
-              </h2>
+              <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium">
+                <span>Read article</span>
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
+              </div>
             </div>
-          </div>
+          </motion.a>
+        </div>
+      </section>
 
-          <div className="mt-16 grid gap-x-6 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
-
-            {articles.slice(1).map((article, index) => (
-              <motion.article
+      {/* Remaining articles — editorial grid */}
+      <section className="px-5 pb-32 md:px-8 md:pb-40">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 md:grid-cols-2 md:gap-10">
+            {rest.map((article, index) => (
+              <motion.a
                 key={article.title}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.08 }}
-                className="group"
+                href={article.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={fadeUp}
+                transition={{ duration: 0.55, ease: "easeOut", delay: (index % 2) * 0.08 }}
+                className="group relative flex flex-col overflow-hidden rounded-[26px] border border-black/10 bg-white/40 transition-colors hover:bg-white/70"
               >
+                {/* faint sequence number */}
+                <span className="pointer-events-none absolute right-5 top-4 text-3xl font-medium text-black/[0.06] md:text-4xl">
+                  {String(index + 2).padStart(2, "0")}
+                </span>
 
                 {/* Image */}
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-[#dfe4db]">
-
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#e9e9e2]">
                   <img
-                    src="/images/Logo.png"
-                    alt=""
-                    className="absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 object-contain opacity-20 transition duration-700 group-hover:scale-110"
+                    src={article.image}
+                    alt={article.imageAlt}
+                    className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                   />
-
-                  <div className="absolute left-5 top-5 rounded-full bg-white/75 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] backdrop-blur-md">
-                    {article.category}
-                  </div>
-
-                  <div className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-white/75 opacity-0 backdrop-blur-md transition duration-300 group-hover:opacity-100">
-                    <ArrowUpRight size={17} />
-                  </div>
-
+                  <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/[0.04]" />
                 </div>
 
                 {/* Content */}
-                <div className="mt-5">
-
-                  <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-black/35">
-                    <CalendarDays size={12} />
-                    {article.date}
+                <div className="flex flex-1 flex-col p-6 md:p-7">
+                  <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-black/35">
+                    <span>{article.category}</span>
+                    <span className="h-1 w-1 rounded-full bg-black/20" />
+                    <span>{article.date}</span>
                   </div>
 
-                  <h3 className="mt-3 text-xl font-medium leading-tight tracking-tight transition-colors group-hover:text-black/60">
+                  <h3 className="mt-4 text-xl font-medium leading-tight tracking-[-0.02em] md:text-2xl">
                     {article.title}
                   </h3>
 
                   <p className="mt-3 text-sm leading-6 text-black/45">
-                    {article.description}
+                    {article.excerpt}
                   </p>
 
-                  <a
-                    href="#"
-                    className="group/link mt-5 inline-flex items-center gap-2 text-sm font-medium"
-                  >
-                    Read article
-
+                  <div className="mt-6 flex items-center gap-2 text-sm font-medium">
+                    <span>Read article</span>
                     <ArrowUpRight
-                      size={15}
-                      className="transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+                      size={16}
+                      className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     />
-                  </a>
-
+                  </div>
                 </div>
-
-              </motion.article>
+              </motion.a>
             ))}
-
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="bg-[#dfe4db] px-5 py-28 md:px-8 md:py-36">
-        <div className="mx-auto max-w-7xl">
-
-          <p className="text-xs uppercase tracking-[0.25em] text-black/40">
-            Stay informed
-          </p>
-
-          <h2 className="mt-7 max-w-4xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] md:text-7xl">
-            Better hiring
-            <br />
-            starts with
-            <span className="text-black/30"> better insight.</span>
-          </h2>
-
-          <p className="mt-8 max-w-xl text-base leading-7 text-black/55 md:text-lg">
-            Explore perspectives from our team on talent, leadership and
-            the changing world of recruitment.
-          </p>
-
-        </div>
-      </section>
-
     </main>
   );
 }
-
-export default Blog
