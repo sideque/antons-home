@@ -42,8 +42,6 @@ const jobs = [
   },
 ];
 
-import React from 'react'
-
 export const Careers = () => {
   return (
     <main className="bg-[#f5f5f0] text-[#111311]">
