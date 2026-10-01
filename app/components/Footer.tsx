@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const links = [
@@ -11,77 +12,138 @@ const links = [
   { label: "Contact", href: "/contact" },
 ];
 
+const socialLinks = [
+  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "#" },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111311] px-5 pb-8 pt-16 text-white md:px-8 md:pt-20">
+    <footer className="bg-[#111311] px-5 pb-8 pt-20 text-white md:px-8 md:pt-28">
       <div className="mx-auto max-w-7xl">
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
+        {/* TOP */}
+        <div className="grid gap-16 lg:grid-cols-[1.5fr_0.7fr_0.8fr]">
 
-          <div>
-            <div className="flex items-center">
-              <img
-                src="/images/Logo2.webp"
-                alt="Antons"
-                className="h-20 w-20 object-contain"
-              />
-            </div>
+          {/* BRAND */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <img
+              src="/images/Logo2.webp"
+              alt="Antons"
+              className="h-20 w-20 object-contain"
+            />
 
-            <p className="mt-6 max-w-sm text-sm leading-6 text-white/35">
+            <p className="mt-7 max-w-md text-lg leading-8 tracking-tight text-white/45 md:text-xl">
               Connecting exceptional talent with ambitious businesses
               across the GCC.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/30">
-              Explore
-            </p>
-
-            <div className="mt-5 flex flex-col gap-3">
-              {links.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="w-fit text-sm text-white/60 transition hover:text-white"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/30">
-              Get in touch
             </p>
 
             <a
               href="mailto:info@antons.ae"
-              className="group mt-5 flex w-fit items-center gap-2 text-sm text-white/70"
+              className="group mt-8 inline-flex items-center gap-2 border-b border-white/20 pb-2 text-sm text-white/70 transition hover:border-white hover:text-white"
             >
               info@antons.ae
 
               <ArrowUpRight
                 size={15}
-                className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
             </a>
+          </motion.div>
 
-            <p className="mt-4 text-sm leading-6 text-white/35">
+          {/* EXPLORE */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
+            <p className="text-[10px] uppercase tracking-[0.25em] text-white/30">
+              Explore
+            </p>
+
+            <nav className="mt-7 flex flex-col gap-4">
+              {links.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="group flex w-fit items-center gap-2 text-sm text-white/55 transition hover:text-white"
+                >
+                  <span>{link.label}</span>
+
+                  <ArrowUpRight
+                    size={13}
+                    className="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:opacity-100"
+                  />
+                </a>
+              ))}
+            </nav>
+          </motion.div>
+
+          {/* CONTACT */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
+            <p className="text-[10px] uppercase tracking-[0.25em] text-white/30">
+              Visit us
+            </p>
+
+            <p className="mt-7 max-w-xs text-sm leading-6 text-white/45">
               Dubai, United Arab Emirates
             </p>
-          </div>
 
+            <p className="mt-6 text-[10px] uppercase tracking-[0.25em] text-white/30">
+              Connect
+            </p>
+
+            <div className="mt-4 flex flex-col gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  className="group flex w-fit items-center gap-2 text-sm text-white/55 transition hover:text-white"
+                >
+                  {social.label}
+
+                  <ArrowUpRight
+                    size={14}
+                    className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                  />
+                </a>
+              ))}
+            </div>
+          </motion.div>
         </div>
 
-        <div className="mt-16 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 text-[11px] text-white/25 md:flex-row">
+        {/* DIVIDER */}
+        <div className="mt-24 border-t border-white/10" />
+
+        {/* BOTTOM */}
+        <div className="flex flex-col justify-between gap-5 pt-6 text-[10px] uppercase tracking-[0.15em] text-white/25 md:flex-row md:items-center">
           <p>© 2026 Antons. All rights reserved.</p>
 
           <div className="flex gap-6">
-            <span>Privacy</span>
-            <span>Terms</span>
+            <a
+              href="#"
+              className="transition hover:text-white/60"
+            >
+              Privacy
+            </a>
+
+            <a
+              href="#"
+              className="transition hover:text-white/60"
+            >
+              Terms
+            </a>
           </div>
         </div>
 
