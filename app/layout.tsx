@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Connecting exceptional talent with ambitious businesses across the GCC.",
     images: [
       {
-        url: "/images/Logo.png",
+        url: "/images/Logo.webp",
         width: 800,
         height: 800,
         alt: "Antons",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Antons | Executive Search & Talent Solutions",
     description:
       "Connecting exceptional talent with ambitious businesses across the GCC.",
-    images: ["/images/Logo.png"],
+    images: ["/images/Logo.webp"],
   },
 
   robots: {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/images/Logo.png",
+    icon: "/images/Logo.webp",
   },
 };
 

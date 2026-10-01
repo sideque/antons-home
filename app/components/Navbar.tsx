@@ -85,7 +85,7 @@ export default function Navbar() {
             className="group flex h-full items-center"
           >
             <motion.img
-              src="/images/Logo.png"
+              src="/images/Logo.webp"
               alt="Antons"
               className="h-[68px] w-[68px] object-contain"
               whileHover={{

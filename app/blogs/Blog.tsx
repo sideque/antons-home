@@ -144,7 +144,7 @@ export default function BlogsPage() {
               {/* logo mark, layered on top */}
               <div className="absolute bottom-6 left-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-black/10 bg-[#f5f5f0]/90 backdrop-blur-sm md:h-24 md:w-24">
                 <img
-                  src="/images/Logo.png"
+                  src="/images/Logo.webp"
                   alt="Antons"
                   className="h-10 w-10 object-contain opacity-80 md:h-12 md:w-12"
                 />

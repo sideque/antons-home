@@ -74,7 +74,7 @@ const Services = () => {
               </p>
 
               <img
-                src="/images/Logo.png"
+                src="/images/Logo.webp"
                 alt="Antons"
                 className="mt-16 h-40 w-40 object-contain md:h-52 md:w-52"
               />

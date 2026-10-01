@@ -54,7 +54,7 @@ export default function About() {
             </p>
 
             <motion.img
-              src="/images/Logo.png"
+              src="/images/Logo.webp"
               alt="Antons logo"
               animate={{ y: [0, -8, 0], rotate: [0, 1.5, 0] }}
               transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -118,7 +118,7 @@ export default function About() {
               />
 
               <img
-                src="/images/Logo.png"
+                src="/images/Logo.webp"
                 alt=""
                 aria-hidden
                 className={`absolute right-6 top-6 h-20 w-20 object-contain transition duration-500 group-hover:scale-110 ${card.logo}`}

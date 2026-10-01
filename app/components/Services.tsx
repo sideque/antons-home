@@ -61,7 +61,7 @@ export default function Services() {
             </p>
 
             <motion.img
-              src="/images/Logo.png"
+              src="/images/Logo.webp"
               alt="Antons logo"
               animate={{ y: [0, -10, 0], rotate: [0, -1.5, 0] }}
               transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}

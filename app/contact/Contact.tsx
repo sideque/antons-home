@@ -38,7 +38,7 @@ function ContactHero() {
                 className="absolute -inset-6 rounded-full border border-black/[0.08]"
               />
               <img
-                src="/images/Logo.png"
+                src="/images/Logo.webp"
                 alt="Antons logo"
                 className="relative h-full w-full object-contain"
               />
