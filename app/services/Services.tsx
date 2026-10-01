@@ -110,7 +110,7 @@ const Services = () => {
             className="group relative mt-16 h-[300px] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] md:mt-20 md:h-[560px]"
           >
             <img
-              src="/images/services/hero.jpg"
+              src="/images/serviceImg/teamMet.webp"
               alt="Antons consultants in an executive meeting discussing a talent search"
               className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
             />
@@ -146,7 +146,7 @@ const Services = () => {
               className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-white/5 lg:sticky lg:top-32"
             >
               <img
-                src="/images/services/services-main.jpg"
+                src="/images/serviceImg/work.webp"
                 alt="Antons recruitment consultants at work"
                 className="h-full w-full object-cover opacity-90"
               />
@@ -205,7 +205,7 @@ const Services = () => {
         className="relative h-[300px] w-full overflow-hidden md:h-[500px]"
       >
         <img
-          src="/images/services/workforce.jpg"
+          src="/images/serviceImg/build.webp"
           alt="Antons workforce solutions across the GCC"
           className="h-full w-full object-cover"
         />
@@ -234,7 +234,7 @@ const Services = () => {
               className="group relative order-1 aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] lg:order-none"
             >
               <img
-                src="/images/services/value-added.jpg"
+                src="/images/serviceImg/onboarding.webp"
                 alt="Antons team supporting a client through onboarding"
                 className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
@@ -297,7 +297,7 @@ const Services = () => {
             className="relative overflow-hidden rounded-[2rem] bg-[#dfe4db] px-5 py-16 md:px-8 md:py-24"
           >
             <img
-              src="/images/services/cta.jpg"
+              src="/images/serviceImg/working.webp"
               alt=""
               className="absolute inset-0 h-full w-full object-cover"
             />
