@@ -10,7 +10,7 @@ const articles = [
     title: "5 Recruitment Challenges Dubai Tech Employers Face in 2025",
     excerpt:
       "The tech industry in Dubai is growing rapidly. From AI-driven solutions to cloud transformation, companies are racing to innovate while hiring the right talent becomes increasingly challenging.",
-    href: "https://antons.ae/blogs/5-recruitment-challenges-dubai-tech-employers-face-in-2025/",
+    href:  "/blogs/articleone",
     image: "/images/blogsImg/one.webp",
     imageAlt:
       "Technology team collaborating in a modern Dubai office during a hiring discussion",
@@ -22,7 +22,7 @@ const articles = [
       "Why your competitors are hiring top talent faster and the recruitment metrics behind it!",
     excerpt:
       "In the UAE's dynamic business environment, some organisations consistently fill roles faster than others. Discover the recruitment metrics behind that difference.",
-    href: "https://antons.ae/blogs/why-your-competitors-are-hiring-top-talent-faster/",
+    href: "/blogs/articletwo",
     image: "/images/blogsImg/two.webp",
     imageAlt: "Recruitment team reviewing hiring metrics on a dashboard",
   },
@@ -32,7 +32,7 @@ const articles = [
     title: "UAE Job Market Update (August 2024)",
     excerpt:
       "An overview of the UAE job market and the sectors showing positive signs of growth, including continued demand for skilled technology professionals.",
-    href: "https://antons.ae/blogs/uae-job-market-update-august-2024/",
+    href: "/blogs/articlethree",
     image: "/images/blogsImg/jobs.webp",
     imageAlt: "Dubai skyline representing the UAE business and job market",
   },
@@ -42,7 +42,7 @@ const articles = [
     title: "The Rise of Fintech in the UAE: A Land of Opportunity for Professionals",
     excerpt:
       "The UAE has rapidly become a global hub for financial technology, creating new opportunities for professionals across the growing fintech ecosystem.",
-    href: "https://antons.ae/blogs/the-rise-of-fintech-in-the-uae/",
+    href: "/blogs/articlefour",
     image: "/images/blogsImg/three.webp",
     imageAlt: "Financial professionals analysing fintech growth data",
   },
@@ -52,7 +52,7 @@ const articles = [
     title: "Laying Foundations: Setting Up Business in Dubai",
     excerpt:
       "Dubai's strategic location and economic environment continue to attract entrepreneurs looking to establish and grow service businesses.",
-    href: "https://antons.ae/blogs/laying-foundations-setting-up-business-in-dubai/",
+    href: "/blogs/articlefive",
     image: "/images/blogsImg/four.webp",
     imageAlt: "Entrepreneurs meeting to plan a new business setup in Dubai",
   },
@@ -63,7 +63,7 @@ const articles = [
       "Navigating the Job Market in Dubai: An Overview for Newcomers (2024 – 2025)",
     excerpt:
       "An overview of Dubai's dynamic job market, economic landscape and opportunities across different sectors for professionals entering the region.",
-    href: "https://antons.ae/blogs/navigating-the-job-market-in-dubai/",
+    href: "/blogs/articlesix",
     image: "/images/blogsImg/five.webp",
     imageAlt: "Professional walking through a modern Dubai business district",
   },
@@ -159,7 +159,6 @@ export default function BlogsPage() {
         <div className="mx-auto max-w-7xl">
           <motion.a
             href={featured.href}
-            target="_blank"
             rel="noopener noreferrer"
             initial="hidden"
             whileInView="show"
@@ -214,7 +213,6 @@ export default function BlogsPage() {
               <motion.a
                 key={article.title}
                 href={article.href}
-                target="_blank"
                 rel="noopener noreferrer"
                 initial="hidden"
                 whileInView="show"
