@@ -87,7 +87,7 @@ export default function Navbar() {
             <motion.img
               src="/images/Logo.webp"
               alt="Antons"
-              className="h-[68px] w-[68px] object-contain"
+              className="h-[88px] w-[88px] object-contain"
               whileHover={{
                 scale: 1.06,
                 rotate: 1.5,
