@@ -259,10 +259,10 @@ const Services = () => {
               </p>
 
               <h2 className="mt-6 max-w-xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
-                More than
+                Best Recruitment
 
                 <span className="text-[#D45539]/70">
-                  {" "}recruitment.
+                  {" "}Solutions In UAE.
                 </span>
               </h2>
 
