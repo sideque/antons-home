@@ -19,7 +19,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#191919] px-5 pb-8 pt-20 text-[#F08043] md:px-8 md:pt-28">
+    <footer className="bg-white px-5 pb-8 pt-20 text-[#191919] md:px-8 md:pt-28">
       <div className="mx-auto max-w-7xl">
 
         {/* TOP */}
@@ -38,14 +38,14 @@ export default function Footer() {
               className="h-20 w-20 object-contain"
             />
 
-            <p className="mt-7 max-w-md text-lg leading-8 tracking-tight text-[#F08043]/60 md:text-xl">
+            <p className="mt-7 max-w-md text-lg leading-8 tracking-tight text-[#191919]/60 md:text-xl">
               Connecting exceptional talent with ambitious businesses
               across the GCC.
             </p>
 
             <a
               href="mailto:info@antons.ae"
-              className="group mt-8 inline-flex items-center gap-2 border-b border-[#F08043]/30 pb-2 text-sm text-[#F08043]/80 transition hover:border-[#F08043] hover:text-[#F08043]"
+              className="group mt-8 inline-flex items-center gap-2 border-b border-[#191919]/30 pb-2 text-sm text-[#191919]/80 transition hover:border-[#191919] hover:text-[#191919]"
             >
               info@antons.ae
 
@@ -72,7 +72,7 @@ export default function Footer() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="group flex w-fit items-center gap-2 text-sm text-[#F08043]/70 transition hover:text-[#F08043]"
+                  className="group flex w-fit items-center gap-2 text-sm text-[#191919]/70 transition hover:text-[#191919]"
                 >
                   <span>{link.label}</span>
 
@@ -96,7 +96,7 @@ export default function Footer() {
               Visit us
             </p>
 
-            <p className="mt-7 max-w-xs text-sm leading-6 text-[#F08043]/60">
+            <p className="mt-7 max-w-xs text-sm leading-6 text-[#191919]/60">
               Dubai, United Arab Emirates
             </p>
 
@@ -109,7 +109,7 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="group flex w-fit items-center gap-2 text-sm text-[#F08043]/70 transition hover:text-[#F08043]"
+                  className="group flex w-fit items-center gap-2 text-sm text-[#191919]/70 transition hover:text-[#191919]"
                 >
                   {social.label}
 
@@ -124,23 +124,23 @@ export default function Footer() {
         </div>
 
         {/* DIVIDER */}
-        <div className="mt-24 border-t border-[#F08043]/15" />
+        <div className="mt-24 border-t border-[#191919]/10" />
 
         {/* BOTTOM */}
-        <div className="flex flex-col justify-between gap-5 pt-6 text-[10px] uppercase tracking-[0.15em] text-[#F08043]/50 md:flex-row md:items-center">
+        <div className="flex flex-col justify-between gap-5 pt-6 text-[10px] uppercase tracking-[0.15em] text-[#191919]/50 md:flex-row md:items-center">
           <p>© 2026 Antons. All rights reserved.</p>
 
           <div className="flex gap-6">
             <a
               href="#"
-              className="transition hover:text-[#F08043]/80"
+              className="transition hover:text-[#191919]/80"
             >
               Privacy
             </a>
 
             <a
               href="#"
-              className="transition hover:text-[#F08043]/80"
+              className="transition hover:text-[#191919]/80"
             >
               Terms
             </a>
