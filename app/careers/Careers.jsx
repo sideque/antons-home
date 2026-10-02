@@ -244,7 +244,7 @@ export const Careers = () => {
               </p>
 
               <a
-                href="/careers/jobsearch"
+                href="/" //careers/jobsearch
                 rel="noreferrer"
                 className="group mt-9 inline-flex items-center gap-3 rounded-full border border-[#191919] bg-white px-7 py-4 text-sm font-medium text-[#191919] transition hover:scale-[1.02] hover:border-[#D45539] hover:text-[#D45539]"
               >
