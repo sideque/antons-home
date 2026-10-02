@@ -44,16 +44,16 @@ const jobs = [
 
 export const Careers = () => {
   return (
-    <main className="bg-[#f5f5f0] text-[#111311]">
+    <main className="bg-white text-[#191919]">
 
       {/* HERO */}
-      <section className="px-5 pb-24 pt-36 md:px-8 md:pb-32 md:pt-44">
+      <section className="bg-white px-5 pb-24 pt-36 md:px-8 md:pb-32 md:pt-44">
         <div className="mx-auto max-w-7xl">
 
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
 
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
                 Careers
               </p>
 
@@ -69,14 +69,14 @@ export const Careers = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="max-w-5xl text-5xl font-medium leading-[0.96] tracking-[-0.055em] md:text-7xl lg:text-[6.5rem]">
+              <h1 className="max-w-5xl text-5xl font-medium leading-[0.96] tracking-[-0.055em] text-[#191919] md:text-7xl lg:text-[6.5rem]">
                 Build your
                 <br />
                 career with
-                <span className="text-black/30"> Antons.</span>
+                <span className="text-[#D45539]"> Antons.</span>
               </h1>
 
-              <p className="mt-10 max-w-2xl text-base leading-7 text-black/55 md:text-lg">
+              <p className="mt-10 max-w-2xl text-base leading-7 text-[#191919] md:text-lg">
                 Join a team that connects exceptional people with ambitious
                 organisations across the region.
               </p>
@@ -87,25 +87,25 @@ export const Careers = () => {
       </section>
 
       {/* OPEN POSITIONS */}
-      <section className="bg-[#111311] px-5 py-28 text-white md:px-8 md:py-40">
+      <section className="bg-white px-5 py-28 text-[#191919] md:px-8 md:py-40">
         <div className="mx-auto max-w-7xl">
 
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
 
             {/* LEFT */}
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-white/35">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
                 Opportunities
               </p>
 
-              <h2 className="mt-6 max-w-md text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
+              <h2 className="mt-6 max-w-md text-4xl font-medium leading-[1.05] tracking-[-0.045em] text-[#191919] md:text-6xl">
                 Find your
                 <br />
                 next
-                <span className="text-white/30"> opportunity.</span>
+                <span className="text-[#D45539]"> opportunity.</span>
               </h2>
 
-              <p className="mt-7 max-w-sm text-sm leading-6 text-white/40">
+              <p className="mt-7 max-w-sm text-sm leading-6 text-[#191919]">
                 Explore current opportunities and discover where your
                 experience could make an impact.
               </p>
@@ -115,45 +115,45 @@ export const Careers = () => {
             <div>
 
               {/* SEARCH */}
-              <div className="flex flex-col gap-3 border-b border-white/10 pb-8 md:flex-row">
+              <div className="flex flex-col gap-3 border-b border-black/10 pb-8 md:flex-row">
 
                 <div className="relative flex-1">
                   <Search
                     size={17}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 text-[#F08043]"
                   />
 
                   <input
                     type="text"
                     placeholder="Search by keyword"
-                    className="h-12 w-full rounded-full border border-white/10 bg-white/[0.04] pl-11 pr-5 text-sm text-white outline-none placeholder:text-white/25 focus:border-white/30"
+                    className="h-12 w-full rounded-full border border-black/10 bg-white pl-11 pr-5 text-sm text-[#191919] outline-none placeholder:text-[#F08043] focus:border-[#D45539]"
                   />
                 </div>
 
-                <button className="flex h-12 items-center justify-center gap-2 rounded-full border border-white/10 px-6 text-sm text-white/70 transition hover:bg-white hover:text-black">
+                <button className="flex h-12 items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-6 text-sm text-[#191919] transition hover:border-[#D45539] hover:text-[#D45539]">
                   <MapPin size={16} />
                   Select location
                 </button>
 
-                <button className="flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-medium text-black transition hover:bg-white/90">
+                <button className="flex h-12 items-center justify-center rounded-full border border-[#191919] bg-white px-6 text-sm font-medium text-[#191919] transition hover:border-[#D45539] hover:text-[#D45539]">
                   Search
                 </button>
 
               </div>
 
               {/* JOB COUNT */}
-              <div className="flex items-center justify-between border-b border-white/10 py-6">
-                <p className="text-sm text-white/40">
+              <div className="flex items-center justify-between border-b border-black/10 py-6">
+                <p className="text-sm text-[#F08043]">
                   Open positions
                 </p>
 
-                <span className="text-2xl font-medium">
+                <span className="text-2xl font-medium text-[#191919]">
                   06
                 </span>
               </div>
 
               {/* JOBS */}
-              <div>
+              {/* <div>
 
                 {jobs.map((job, index) => (
                   <motion.a
@@ -167,16 +167,16 @@ export const Careers = () => {
                     transition={{
                       delay: index * 0.06,
                     }}
-                    className="group grid gap-5 border-b border-white/10 py-7 md:grid-cols-[1fr_auto] md:items-center"
+                    className="group grid gap-5 border-b border-black/10 py-7 md:grid-cols-[1fr_auto] md:items-center"
                   >
 
                     <div>
 
-                      <h3 className="text-xl font-medium tracking-tight md:text-2xl">
+                      <h3 className="text-xl font-medium tracking-tight text-[#191919] md:text-2xl">
                         {job.title}
                       </h3>
 
-                      <div className="mt-3 flex flex-wrap gap-4 text-xs text-white/35">
+                      <div className="mt-3 flex flex-wrap gap-4 text-xs text-[#F08043]">
 
                         <span className="flex items-center gap-2">
                           <MapPin size={13} />
@@ -192,7 +192,7 @@ export const Careers = () => {
 
                     </div>
 
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full border border-black/15 bg-white text-[#191919] transition-all duration-300 group-hover:border-[#D45539] group-hover:text-[#D45539]">
                       <ArrowUpRight
                         size={17}
                         className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
@@ -202,7 +202,7 @@ export const Careers = () => {
                   </motion.a>
                 ))}
 
-              </div>
+              </div> */}
 
             </div>
           </div>
@@ -210,44 +210,43 @@ export const Careers = () => {
       </section>
 
       {/* OPEN APPLICATION */}
-      <section className="px-5 py-28 md:px-8 md:py-40">
+      <section className="bg-white px-5 py-28 md:px-8 md:py-40">
         <div className="mx-auto max-w-7xl">
 
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
 
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
                 Open application
               </p>
 
-              <div className="mt-8 flex h-14 w-14 items-center justify-center rounded-full border border-black/10">
+              <div className="mt-8 flex h-14 w-14 items-center justify-center rounded-full border border-black/10 text-[#191919]">
                 <Upload size={21} strokeWidth={1.4} />
               </div>
             </div>
 
             <div>
 
-              <h2 className="max-w-4xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
+              <h2 className="max-w-4xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] text-[#191919] md:text-6xl">
                 Don&apos;t see the right
-                <span className="text-black/30"> opportunity?</span>
+                <span className="text-[#D45539]"> opportunity?</span>
               </h2>
 
-              <p className="mt-8 max-w-2xl text-base leading-7 text-black/50 md:text-lg">
+              <p className="mt-8 max-w-2xl text-base leading-7 text-[#191919] md:text-lg">
                 We are always looking for bright minds and enthusiastic
                 people from diverse backgrounds who want to be part of an
                 outstanding team.
               </p>
 
-              <p className="mt-5 max-w-2xl text-base leading-7 text-black/50 md:text-lg">
+              <p className="mt-5 max-w-2xl text-base leading-7 text-[#191919] md:text-lg">
                 Even if you don&apos;t find a suitable position below,
                 you can still send us your resume and introduce yourself.
               </p>
 
               <a
-                href="https://www.careers-page.com/antons"
-                target="_blank"
+                href="/careers/jobsearch"
                 rel="noreferrer"
-                className="group mt-9 inline-flex items-center gap-3 rounded-full bg-black px-7 py-4 text-sm font-medium text-white transition hover:scale-[1.02]"
+                className="group mt-9 inline-flex items-center gap-3 rounded-full border border-[#191919] bg-white px-7 py-4 text-sm font-medium text-[#191919] transition hover:scale-[1.02] hover:border-[#D45539] hover:text-[#D45539]"
               >
                 Upload your resume
 
@@ -263,24 +262,24 @@ export const Careers = () => {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-[#dfe4db] px-5 py-28 md:px-8 md:py-36">
+      <section className="relative overflow-hidden bg-white px-5 py-28 md:px-8 md:py-36">
 
         <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full border border-black/10" />
 
         <div className="relative mx-auto max-w-7xl">
 
-          <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+          <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
             Your next chapter
           </p>
 
-          <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] md:text-7xl">
+          <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#191919] md:text-7xl">
             Great careers
             <br />
             start with
-            <span className="text-black/30"> great people.</span>
+            <span className="text-[#D45539]"> great people.</span>
           </h2>
 
-          <p className="mt-8 max-w-xl text-base leading-7 text-black/55 md:text-lg">
+          <p className="mt-8 max-w-xl text-base leading-7 text-[#191919] md:text-lg">
             Explore opportunities with Antons and take the next step in
             your career.
           </p>
