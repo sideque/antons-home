@@ -75,8 +75,7 @@ export default function Navbar() {
         variants={navVariants}
         className="fixed left-0 top-0 z-50 w-full px-4 py-4 md:px-8 md:py-5"
       >
-        <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between rounded-full border border-[#F08043]/20 bg-[#191919]/95 px-4 text-[#F08043] shadow-sm backdrop-blur-xl md:px-5">
-
+        <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between rounded-full border border-[#191919]/10 bg-white/95 px-4 text-[#191919] shadow-sm backdrop-blur-xl md:px-5">
           {/* LOGO */}
           <motion.a
             href="/"
@@ -113,8 +112,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`group relative py-2 text-sm transition-colors duration-300 ${
                     active
-                      ? "font-medium text-[#F08043]"
-                      : "text-[#F08043]/65 hover:text-[#F08043]"
+                      ? "font-medium text-[#191919]"
+                      : "text-[#191919]/65 hover:text-[#191919]"
                   }`}
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.25 }}
@@ -153,7 +152,7 @@ export default function Navbar() {
             whileTap={{
               scale: 0.97,
             }}
-            className="group hidden items-center gap-2 rounded-full bg-[#F08043] px-5 py-2.5 text-sm font-medium text-[#191919] md:flex"
+            className="group hidden items-center gap-2 rounded-full bg-[#D45539] px-5 py-2.5 text-sm font-medium text-white md:flex"
           >
             Hire Talent
 
@@ -169,7 +168,7 @@ export default function Navbar() {
             onClick={() => setOpen(!open)}
             whileTap={{ scale: 0.9 }}
             aria-label="Toggle navigation"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#F08043]/30 lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#191919]/15 text-[#191919] lg:hidden"
           >
             <AnimatePresence mode="wait" initial={false}>
               {open ? (
@@ -221,7 +220,7 @@ export default function Navbar() {
               duration: 0.4,
               ease,
             }}
-            className="fixed inset-x-4 top-[100px] z-40 rounded-[2rem] border border-[#F08043]/20 bg-[#191919]/95 p-5 text-[#F08043] shadow-xl backdrop-blur-xl lg:hidden"
+            className="fixed inset-x-4 top-[100px] z-40 rounded-[2rem] border border-[#191919]/10 bg-white/95 p-5 text-[#191919] shadow-xl backdrop-blur-xl lg:hidden"
           >
             <div className="flex flex-col">
               {links.map((link, index) => {
@@ -248,10 +247,10 @@ export default function Navbar() {
                     whileHover={{
                       x: 6,
                     }}
-                    className={`relative border-b border-[#F08043]/20 py-4 text-lg last:border-0 ${
+                    className={`relative border-b border-[#191919]/10 py-4 text-lg last:border-0 ${
                       active
-                        ? "font-semibold text-[#F08043]"
-                        : "font-medium text-[#F08043]/70"
+                        ? "font-semibold text-[#191919]"
+                        : "font-medium text-[#191919]/70"
                     }`}
                   >
                     <span className="flex items-center justify-between">
@@ -259,9 +258,7 @@ export default function Navbar() {
 
                       <ArrowUpRight
                         size={17}
-                        className={
-                          active ? "opacity-100" : "opacity-30"
-                        }
+                        className={active ? "text-[#D45539]" : "opacity-30"}
                       />
                     </span>
 
@@ -299,7 +296,7 @@ export default function Navbar() {
                 whileTap={{
                   scale: 0.97,
                 }}
-                className="mt-4 flex items-center justify-center gap-2 rounded-full bg-[#F08043] py-3.5 text-sm font-medium text-[#191919]"
+                className="mt-4 flex items-center justify-center gap-2 rounded-full bg-[#D45539] py-3.5 text-sm font-medium text-white"
               >
                 Hire Talent
                 <ArrowUpRight size={16} />
