@@ -112,7 +112,7 @@ const Services = () => {
             animate="show"
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            className="group relative mt-16 h-[300px] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/15 md:mt-20 md:h-[560px]"
+            className="group relative mt-16 h-[300px] w-full overflow-hidden rounded-[2rem] bg-white md:mt-20 md:h-[560px]"
           >
             <img
               src="/images/serviceImg/teamMet.webp"
@@ -125,7 +125,7 @@ const Services = () => {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-[#191919] px-5 py-24 text-[#FFFFFF] md:px-8 md:py-36">
+      <section className="bg-white px-5 py-24 text-[#191919] md:px-8 md:py-36">
         <div className="mx-auto max-w-7xl">
 
           <div className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr] lg:gap-12">
@@ -134,7 +134,7 @@ const Services = () => {
               What we offer
             </p>
 
-            <p className="max-w-md text-sm leading-6 text-[#FFFFFF]/40">
+            <p className="max-w-md text-sm leading-6 text-[#191919]/55">
               Flexible recruitment and workforce solutions designed to help
               businesses find, manage and retain the right talent.
             </p>
@@ -150,7 +150,7 @@ const Services = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#FFFFFF]/5 lg:sticky lg:top-32"
+              className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-white lg:sticky lg:top-32"
             >
               <img
                 src="/images/serviceImg/work.webp"
@@ -160,7 +160,7 @@ const Services = () => {
             </motion.div>
 
             {/* Editorial service rows */}
-            <div className="border-t border-[#FFFFFF]/10">
+            <div className="border-t border-[#191919]/10">
 
               {services.map((service, index) => (
                 <motion.a
@@ -173,7 +173,7 @@ const Services = () => {
                     duration: 0.55,
                     delay: index * 0.06,
                   }}
-                  className="group grid gap-4 border-b border-[#FFFFFF]/10 py-8 transition-colors hover:bg-[#F08043]/[0.06] md:grid-cols-[50px_1fr_auto] md:items-center md:gap-6"
+                  className="group grid gap-4 border-b border-[#191919]/10 py-8 transition-colors hover:bg-white md:grid-cols-[50px_1fr_auto] md:items-center md:gap-6"
                 >
 
                   <span className="text-xs text-[#F08043]/60">
@@ -185,12 +185,12 @@ const Services = () => {
                       {service.title}
                     </h2>
 
-                    <p className="mt-2 max-w-md text-sm leading-6 text-[#FFFFFF]/40">
+                    <p className="mt-2 max-w-md text-sm leading-6 text-[#191919]/55">
                       {service.description}
                     </p>
                   </div>
 
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/40 text-[#F08043] transition-all duration-300 group-hover:border-[#F08043] group-hover:bg-[#F08043] group-hover:text-[#191919]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/40 text-[#F08043] transition-all duration-300 group-hover:border-[#D45539] group-hover:bg-white group-hover:text-[#D45539]">
                     <ArrowUpRight
                       size={17}
                       className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
@@ -243,7 +243,7 @@ const Services = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative order-1 aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/15 lg:order-none"
+              className="group relative order-1 aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-white lg:order-none"
             >
               <img
                 src="/images/serviceImg/onboarding.webp"
@@ -314,7 +314,7 @@ const Services = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative overflow-hidden rounded-[2rem] bg-[#F08043]/15 px-5 py-16 md:px-8 md:py-24"
+            className="relative overflow-hidden rounded-[2rem] bg-white px-5 py-16 md:px-8 md:py-24"
           >
 
             <img
@@ -331,7 +331,7 @@ const Services = () => {
                 Let&apos;s work together
               </p>
 
-              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#FFFFFF] md:text-7xl">
+              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#191919] md:text-7xl">
                 Looking for the
 
                 <br />
@@ -343,14 +343,14 @@ const Services = () => {
 
               <div className="mt-10 flex flex-col justify-between gap-8 md:flex-row md:items-end">
 
-                <p className="max-w-lg text-base leading-7 text-[#FFFFFF]/70 md:text-lg">
+                <p className="max-w-lg text-base leading-7 text-[#191919]/70 md:text-lg">
                   Tell us what you need and our team will help you find the
                   right talent solution for your organisation.
                 </p>
 
                 <a
                   href="/contact"
-                  className="group flex w-fit items-center gap-3 rounded-full bg-[#F08043] px-7 py-4 text-sm font-medium text-[#191919] transition hover:scale-[1.02]"
+                  className="group flex w-fit items-center gap-3 rounded-full border border-[#D45539] bg-white px-7 py-4 text-sm font-medium text-[#D45539] transition hover:scale-[1.02]"
                 >
                   Hire talent
 
