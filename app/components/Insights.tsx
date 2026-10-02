@@ -36,7 +36,7 @@ const articles = [
 
 export default function Insights() {
   return (
-    <section id="insights" className="bg-[#f5f5f0] px-5 py-28 md:px-8 md:py-40">
+    <section id="insights" className="bg-white px-5 py-28 md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
@@ -46,14 +46,14 @@ export default function Insights() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 1, ease }}
           >
-            <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-black/40">
-              <span className="h-px w-8 bg-black/30" />
+            <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#191919]/40">
+              <span className="h-px w-8 bg-[#F08043]" />
               Insights
             </p>
 
-            <h2 className="mt-7 max-w-2xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
+            <h2 className="mt-7 max-w-2xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em] text-[#191919]">
               Ideas for
-              <span className="italic text-black/30"> ambitious</span>
+              <span className="italic text-[#D45539]"> ambitious</span>
               <br />
               businesses.
             </h2>
@@ -61,7 +61,7 @@ export default function Insights() {
 
           <Link
             href="/blogs"
-            className="group flex w-fit items-center gap-2 border-b border-black/20 pb-2 text-sm transition-colors hover:border-black"
+            className="group flex w-fit items-center gap-2 border-b border-[#191919]/20 pb-2 text-sm text-[#191919] transition-colors hover:border-[#F08043]"
           >
             View all insights
             <ArrowUpRight
@@ -83,10 +83,10 @@ export default function Insights() {
               className={article.offset}
             >
               <Link href="/blogs" className="group block">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-[#dfe4db] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1.5">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-[#F08043] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1.5">
                   <div
                     aria-hidden
-                    className={`absolute rounded-full border border-black/10 transition-transform duration-700 group-hover:scale-110 ${article.ring}`}
+                    className={`absolute rounded-full border border-[#191919]/10 transition-transform duration-700 group-hover:scale-110 ${article.ring}`}
                   />
 
                   <img
@@ -95,25 +95,25 @@ export default function Insights() {
                     className="h-full w-full object-contain p-16 opacity-90 transition duration-700 group-hover:scale-105"
                   />
 
-                  <span className="absolute bottom-5 left-5 rounded-full bg-white/80 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em]">
+                  <span className="absolute bottom-5 left-5 rounded-full bg-white/80 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] text-[#191919]">
                     {article.category}
                   </span>
 
-                  <span className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 opacity-0 transition-all duration-500 group-hover:opacity-100">
+                  <span className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 text-[#191919] opacity-0 transition-all duration-500 group-hover:opacity-100">
                     <ArrowUpRight size={17} />
                   </span>
                 </div>
 
                 <div className="mt-6">
-                  <p className="text-[10px] uppercase tracking-[0.18em] text-black/35">
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-[#D45539]/70">
                     {article.date}
                   </p>
 
-                  <h3 className="mt-3 text-xl font-medium leading-tight tracking-[-0.02em] transition-all duration-500 group-hover:translate-x-1 group-hover:text-black/60">
+                  <h3 className="mt-3 text-xl font-medium leading-tight tracking-[-0.02em] text-[#191919] transition-all duration-500 group-hover:translate-x-1 group-hover:text-[#D45539]">
                     {article.title}
                   </h3>
 
-                  <p className="mt-4 inline-flex items-center gap-2 text-sm text-black/45 transition-colors group-hover:text-black">
+                  <p className="mt-4 inline-flex items-center gap-2 text-sm text-[#191919]/45 transition-colors group-hover:text-[#191919]">
                     Read article
                     <ArrowUpRight
                       size={14}

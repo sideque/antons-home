@@ -10,7 +10,7 @@ const articles = [
     title: "5 Recruitment Challenges Dubai Tech Employers Face in 2025",
     excerpt:
       "The tech industry in Dubai is growing rapidly. From AI-driven solutions to cloud transformation, companies are racing to innovate while hiring the right talent becomes increasingly challenging.",
-    href:  "/blogs/articleone",
+    href: "/blogs/articleone",
     image: "/images/blogsImg/one.webp",
     imageAlt:
       "Technology team collaborating in a modern Dubai office during a hiring discussion",
@@ -39,7 +39,8 @@ const articles = [
   {
     date: "07 Jun 2024",
     category: "GCC Insights",
-    title: "The Rise of Fintech in the UAE: A Land of Opportunity for Professionals",
+    title:
+      "The Rise of Fintech in the UAE: A Land of Opportunity for Professionals",
     excerpt:
       "The UAE has rapidly become a global hub for financial technology, creating new opportunities for professionals across the growing fintech ecosystem.",
     href: "/blogs/articlefour",
@@ -78,11 +79,14 @@ const fadeUp = {
 
 export default function BlogsPage() {
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#f5f5f0] text-[#111311]">
+    <main className="min-h-screen overflow-x-hidden bg-[#FFFFFF] text-[#191919]">
+
       {/* Hero */}
       <section className="px-5 pb-16 pt-40 md:px-8 md:pb-20 md:pt-48">
         <div className="mx-auto max-w-7xl">
+
           <div className="grid gap-14 lg:grid-cols-[0.85fr_1fr] lg:items-center">
+
             {/* Left: eyebrow, headline, description */}
             <motion.div
               initial="hidden"
@@ -94,7 +98,7 @@ export default function BlogsPage() {
               <motion.p
                 variants={fadeUp}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="text-xs uppercase tracking-[0.22em] text-black/40"
+                className="text-xs uppercase tracking-[0.22em] text-[#D45539]"
               >
                 Insights
               </motion.p>
@@ -106,13 +110,13 @@ export default function BlogsPage() {
               >
                 Ideas for
                 <br />
-                <span className="text-black/30">ambitious</span> businesses.
+                <span className="text-[#F08043]">ambitious</span> businesses.
               </motion.h1>
 
               <motion.p
                 variants={fadeUp}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="mt-8 max-w-md text-base leading-7 text-black/55 md:text-lg"
+                className="mt-8 max-w-md text-base leading-7 text-[#191919]/55 md:text-lg"
               >
                 Insights, perspectives and market intelligence on talent,
                 recruitment and the changing business landscape across the
@@ -128,21 +132,23 @@ export default function BlogsPage() {
               className="relative aspect-[4/3] w-full"
             >
               {/* soft circular accent shapes */}
-              <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#8a998f]/15 blur-2xl md:h-56 md:w-56" />
-              <div className="pointer-events-none absolute -bottom-8 -left-8 h-32 w-32 rounded-full border border-black/10" />
+              <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#F08043]/20 blur-2xl md:h-56 md:w-56" />
+
+              <div className="pointer-events-none absolute -bottom-8 -left-8 h-32 w-32 rounded-full border border-[#191919]/10" />
 
               {/* image plate */}
-              <div className="relative h-full w-full overflow-hidden rounded-[28px] border border-black/10 bg-[#e9e9e2]">
+              <div className="relative h-full w-full overflow-hidden rounded-[28px] border border-[#191919]/10 bg-[#F08043]/10">
                 <img
                   src="/images/blogsImg/dubaiTech.webp"
                   alt="Antons consultants advising a client in a modern Dubai boardroom"
                   className="h-full w-full object-cover opacity-90"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#191919]/10 via-transparent to-transparent" />
               </div>
 
               {/* logo mark, layered on top */}
-              <div className="absolute bottom-6 left-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-black/10 bg-[#f5f5f0]/90 backdrop-blur-sm md:h-24 md:w-24">
+              <div className="absolute bottom-6 left-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-[#191919]/10 bg-[#FFFFFF]/90 backdrop-blur-sm md:h-24 md:w-24">
                 <img
                   src="/images/Logo.webp"
                   alt="Antons"
@@ -150,6 +156,7 @@ export default function BlogsPage() {
                 />
               </div>
             </motion.div>
+
           </div>
         </div>
       </section>
@@ -157,6 +164,7 @@ export default function BlogsPage() {
       {/* Featured article */}
       <section className="px-5 pb-20 md:px-8 md:pb-24">
         <div className="mx-auto max-w-7xl">
+
           <motion.a
             href={featured.href}
             rel="noopener noreferrer"
@@ -165,23 +173,26 @@ export default function BlogsPage() {
             viewport={{ once: true, amount: 0.25 }}
             variants={fadeUp}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="group grid gap-8 rounded-[28px] border border-black/10 p-4 transition-colors hover:bg-black/[0.02] md:grid-cols-[1.15fr_1fr] md:items-center md:gap-10 md:p-6"
+            className="group grid gap-8 rounded-[28px] border border-[#191919]/10 p-4 transition-colors hover:bg-[#F08043]/[0.04] md:grid-cols-[1.15fr_1fr] md:items-center md:gap-10 md:p-6"
           >
             {/* Image */}
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[24px] bg-[#e9e9e2] md:aspect-[16/10]">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[24px] bg-[#F08043]/10 md:aspect-[16/10]">
               <img
                 src={featured.image}
                 alt={featured.imageAlt}
                 className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
               />
-              <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/[0.04]" />
+
+              <div className="absolute inset-0 bg-[#191919]/0 transition-colors duration-500 group-hover:bg-[#191919]/[0.04]" />
             </div>
 
             {/* Content */}
             <div className="px-2 md:px-4">
-              <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-black/35">
+              <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-[#D45539]">
                 <span>{featured.category}</span>
-                <span className="h-1 w-1 rounded-full bg-black/20" />
+
+                <span className="h-1 w-1 rounded-full bg-[#F08043]" />
+
                 <span>{featured.date}</span>
               </div>
 
@@ -189,12 +200,13 @@ export default function BlogsPage() {
                 {featured.title}
               </h2>
 
-              <p className="mt-5 max-w-lg text-sm leading-6 text-black/50 md:text-base">
+              <p className="mt-5 max-w-lg text-sm leading-6 text-[#191919]/50 md:text-base">
                 {featured.excerpt}
               </p>
 
-              <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium">
+              <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#191919]">
                 <span>Read article</span>
+
                 <ArrowUpRight
                   size={18}
                   className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -202,13 +214,16 @@ export default function BlogsPage() {
               </div>
             </div>
           </motion.a>
+
         </div>
       </section>
 
       {/* Remaining articles — editorial grid */}
       <section className="px-5 pb-32 md:px-8 md:pb-40">
         <div className="mx-auto max-w-7xl">
+
           <div className="grid gap-8 md:grid-cols-2 md:gap-10">
+
             {rest.map((article, index) => (
               <motion.a
                 key={article.title}
@@ -218,29 +233,37 @@ export default function BlogsPage() {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={fadeUp}
-                transition={{ duration: 0.55, ease: "easeOut", delay: (index % 2) * 0.08 }}
-                className="group relative flex flex-col overflow-hidden rounded-[26px] border border-black/10 bg-white/40 transition-colors hover:bg-white/70"
+                transition={{
+                  duration: 0.55,
+                  ease: "easeOut",
+                  delay: (index % 2) * 0.08,
+                }}
+                className="group relative flex flex-col overflow-hidden rounded-[26px] border border-[#191919]/10 bg-[#F08043]/[0.03] transition-colors hover:bg-[#F08043]/[0.08]"
               >
                 {/* faint sequence number */}
-                <span className="pointer-events-none absolute right-5 top-4 text-3xl font-medium text-black/[0.06] md:text-4xl">
+                <span className="pointer-events-none absolute right-5 top-4 text-3xl font-medium text-[#D45539]/[0.12] md:text-4xl">
                   {String(index + 2).padStart(2, "0")}
                 </span>
 
                 {/* Image */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#e9e9e2]">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#F08043]/10">
                   <img
                     src={article.image}
                     alt={article.imageAlt}
                     className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/[0.04]" />
+
+                  <div className="absolute inset-0 bg-[#191919]/0 transition-colors duration-500 group-hover:bg-[#191919]/[0.04]" />
                 </div>
 
                 {/* Content */}
                 <div className="flex flex-1 flex-col p-6 md:p-7">
-                  <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-black/35">
+
+                  <div className="flex flex-wrap items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-[#D45539]">
                     <span>{article.category}</span>
-                    <span className="h-1 w-1 rounded-full bg-black/20" />
+
+                    <span className="h-1 w-1 rounded-full bg-[#F08043]" />
+
                     <span>{article.date}</span>
                   </div>
 
@@ -248,23 +271,27 @@ export default function BlogsPage() {
                     {article.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-6 text-black/45">
+                  <p className="mt-3 text-sm leading-6 text-[#191919]/45">
                     {article.excerpt}
                   </p>
 
-                  <div className="mt-6 flex items-center gap-2 text-sm font-medium">
+                  <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#191919]">
                     <span>Read article</span>
+
                     <ArrowUpRight
                       size={16}
                       className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     />
                   </div>
+
                 </div>
               </motion.a>
             ))}
+
           </div>
         </div>
       </section>
+
     </main>
   );
 }

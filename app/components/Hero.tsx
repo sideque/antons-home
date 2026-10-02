@@ -8,7 +8,7 @@ const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const headingLines = [
   { text: "Exceptional", className: "" },
-  { text: "people.", className: "text-black/35" },
+  { text: "people.", className: "text-[#D45539]" },
   { text: "Exceptional", className: "italic pr-[0.06em]" },
   { text: "businesses.", className: "" },
 ];
@@ -37,11 +37,11 @@ export default function Hero() {
         {/* Background rings */}
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-48 top-20 h-[560px] w-[560px] rounded-full border border-black/[0.07]"
+          className="pointer-events-none absolute -right-48 top-20 h-[560px] w-[560px] rounded-full border border-[#191919]/15"
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-20 top-48 h-[360px] w-[360px] rounded-full border border-black/[0.07]"
+          className="pointer-events-none absolute -right-20 top-48 h-[360px] w-[360px] rounded-full border border-[#191919]/15"
         />
 
         <div className="relative mx-auto grid min-h-[calc(100svh-11rem)] max-w-7xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
@@ -51,13 +51,13 @@ export default function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease }}
-              className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-medium uppercase tracking-[0.22em] text-black/55"
+              className="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#191919]/65"
             >
-              <span className="h-2 w-2 rounded-full bg-black" />
+              <span className="h-2 w-2 rounded-full bg-[#191919]" />
               <span>Executive Search</span>
-              <span className="h-3 w-px bg-black/20" />
+              <span className="h-3 w-px bg-[#191919]/30" />
               <span>Talent Solutions</span>
-              <span className="h-3 w-px bg-black/20" />
+              <span className="h-3 w-px bg-[#191919]/30" />
               <span>GCC</span>
             </motion.div>
 
@@ -87,7 +87,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.75, ease }}
-              className="mt-10 max-w-xl text-base leading-7 text-black/60 md:text-lg"
+              className="mt-10 max-w-xl text-base leading-7 text-[#191919]/70 md:text-lg"
             >
               We connect ambitious businesses across the GCC with exceptional
               talent through thoughtful search, deep market expertise and
@@ -102,7 +102,7 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-3 rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition duration-300 hover:scale-[1.02]"
+                className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#191919] px-6 py-3.5 text-sm font-medium text-[#F08043] transition duration-300 hover:scale-[1.02]"
               >
                 Find exceptional talent
                 <ArrowUpRight
@@ -113,7 +113,7 @@ export default function Hero() {
 
               <a
                 href="#services"
-                className="inline-flex items-center justify-center rounded-full border border-black/15 px-6 py-3.5 text-sm font-medium transition duration-300 hover:bg-white"
+                className="inline-flex items-center justify-center rounded-full border border-[#191919]/30 px-6 py-3.5 text-sm font-medium transition duration-300 hover:bg-[#191919]/10"
               >
                 Explore our expertise
               </a>
@@ -127,7 +127,7 @@ export default function Hero() {
             transition={{ duration: 1.2, delay: 0.3, ease }}
             className="relative mx-auto aspect-[4/4.3] w-full max-w-[500px] lg:mr-0 lg:justify-self-end"
           >
-            <div className="absolute inset-0 overflow-hidden rounded-[2rem] bg-[#111311]">
+            <div className="absolute inset-0 overflow-hidden rounded-[2rem] bg-[#191919]">
               <svg
                 viewBox="0 0 400 400"
                 fill="none"
@@ -140,7 +140,7 @@ export default function Hero() {
                   cx="200"
                   cy="200"
                   r="172"
-                  stroke="rgba(255,255,255,0.14)"
+                  stroke="rgba(240,128,67,0.25)"
                   strokeDasharray="2 7"
                   style={{ transformOrigin: "200px 200px" }}
                   animate={{ rotate: 360 }}
@@ -148,7 +148,7 @@ export default function Hero() {
                 />
 
                 {/* Globe */}
-                <circle cx="200" cy="200" r="140" stroke="rgba(255,255,255,0.2)" />
+                <circle cx="200" cy="200" r="140" stroke="rgba(240,128,67,0.3)" />
 
                 {latitudes.map((offset) => {
                   const half = Math.sqrt(140 * 140 - offset * offset);
@@ -159,7 +159,7 @@ export default function Hero() {
                       x2={200 + half}
                       y1={200 + offset}
                       y2={200 + offset}
-                      stroke="rgba(255,255,255,0.08)"
+                      stroke="rgba(240,128,67,0.12)"
                     />
                   );
                 })}
@@ -171,7 +171,7 @@ export default function Hero() {
                     cy="200"
                     rx={frames[0]}
                     ry="140"
-                    stroke="rgba(255,255,255,0.1)"
+                    stroke="rgba(240,128,67,0.16)"
                     animate={{ rx: frames }}
                     transition={{ duration: 36, repeat: Infinity, ease: "linear" }}
                   />
@@ -182,7 +182,7 @@ export default function Hero() {
                   <g key={index}>
                     <motion.path
                       d={node.path}
-                      stroke="rgba(255,255,255,0.4)"
+                      stroke="rgba(240,128,67,0.6)"
                       strokeWidth="0.8"
                       initial={{ pathLength: 0, opacity: 0 }}
                       animate={{ pathLength: 1, opacity: 1 }}
@@ -196,7 +196,7 @@ export default function Hero() {
                       cx={node.x}
                       cy={node.y}
                       r="2.5"
-                      fill="rgba(255,255,255,0.7)"
+                      fill="rgba(240,128,67,0.8)"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 2.2 + index * 0.3, duration: 0.6 }}
@@ -209,16 +209,16 @@ export default function Hero() {
                   cx={hub.x}
                   cy={hub.y}
                   r="4"
-                  stroke="white"
+                  stroke="#F08043"
                   strokeWidth="0.8"
                   animate={{ r: [4, 20], opacity: [0.6, 0] }}
                   transition={{ duration: 3.2, repeat: Infinity, ease: "easeOut" }}
                 />
-                <circle cx={hub.x} cy={hub.y} r="4" fill="white" />
+                <circle cx={hub.x} cy={hub.y} r="4" fill="#F08043" />
                 <text
                   x={hub.x + 12}
                   y={hub.y - 10}
-                  fill="rgba(255,255,255,0.6)"
+                  fill="rgba(240,128,67,0.7)"
                   fontSize="9"
                   letterSpacing="2"
                 >
@@ -226,14 +226,14 @@ export default function Hero() {
                 </text>
               </svg>
 
-              <p className="absolute left-7 top-7 text-[10px] uppercase tracking-[0.22em] text-white/40">
+              <p className="absolute left-7 top-7 text-[10px] uppercase tracking-[0.22em] text-[#F08043]/60">
                 Dubai, UAE
               </p>
 
-              <p className="absolute bottom-7 left-7 max-w-[11rem] text-sm leading-5 text-white/65">
+              <p className="absolute bottom-7 left-7 max-w-[11rem] text-sm leading-5 text-[#F08043]/80">
                 Connecting talent
                 <br />
-                <span className="text-white/35">across the GCC</span>
+                <span className="text-[#D45539]">across the GCC</span>
               </p>
             </div>
 
@@ -241,10 +241,10 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, 6, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-5 right-4 rounded-2xl border border-black/10 bg-white px-5 py-4 md:-right-4"
+              className="absolute -bottom-5 right-4 rounded-2xl border border-[#191919]/20 bg-[#D45539] px-5 py-4 md:-right-4"
             >
               <p className="text-2xl font-medium tracking-tight">GCC</p>
-              <p className="text-xs text-black/45">Talent network</p>
+              <p className="text-xs text-[#191919]/70">Talent network</p>
             </motion.div>
           </motion.div>
         </div>
@@ -253,7 +253,7 @@ export default function Hero() {
         <Link
           href="#about"
           aria-label="Scroll to about section"
-          className="absolute bottom-7 left-8 hidden items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-black/40 transition-colors hover:text-black md:flex"
+          className="absolute bottom-7 left-8 hidden items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-[#191919]/60 transition-colors hover:text-[#191919] md:flex"
         >
           <motion.span
             animate={{ y: [0, 5, 0] }}

@@ -25,34 +25,34 @@ const industries = [
 ];
 
 const tileClass =
-  "group relative flex min-h-[170px] flex-col justify-between overflow-hidden border-b border-r border-black/10 p-5 outline-none sm:min-h-[210px] md:p-7";
+  "group relative flex min-h-[170px] flex-col justify-between overflow-hidden border-b border-r border-[#191919]/10 p-5 outline-none sm:min-h-[210px] md:p-7";
 
 const fillClass =
-  "absolute inset-0 translate-y-full bg-[#111311] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0 group-focus-visible:translate-y-0";
+  "absolute inset-0 translate-y-full bg-[#191919] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0 group-focus-visible:translate-y-0";
 
 export default function Industries() {
   return (
     <section
       id="industries"
-      className="bg-[#e1e4dc] px-5 py-28 md:px-8 md:py-40"
+      className="bg-[#F08043] px-5 py-28 md:px-8 md:py-40"
     >
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
-          <p className="flex items-center gap-3 self-start text-[11px] uppercase tracking-[0.22em] text-black/40">
-            <span className="h-px w-8 bg-black/30" />
+          <p className="flex items-center gap-3 self-start text-[11px] uppercase tracking-[0.22em] text-[#191919]/50">
+            <span className="h-px w-8 bg-[#191919]/40" />
             Industries
           </p>
 
           <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
-            <h2 className="max-w-3xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
+            <h2 className="max-w-3xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em] text-[#191919]">
               Expertise that
               <br />
               understands your
-              <span className="text-black/35"> world.</span>
+              <span className="text-[#D45539]"> world.</span>
             </h2>
 
-            <p className="max-w-xs text-sm leading-6 text-black/50">
+            <p className="max-w-xs text-sm leading-6 text-[#191919]/55">
               Specialist recruitment across sectors that shape the GCC economy
               and its future.
             </p>
@@ -60,7 +60,7 @@ export default function Industries() {
         </div>
 
         {/* Industry grid */}
-        <div className="mt-16 grid grid-cols-2 border-l border-t border-black/10 md:mt-24 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 border-l border-t border-[#191919]/10 md:mt-24 lg:grid-cols-4">
           {industries.map((industry, index) => {
             const Icon = industry.icon;
 
@@ -76,8 +76,9 @@ export default function Industries() {
               >
                 <span aria-hidden className={fillClass} />
 
-                <div className="relative flex items-start justify-between text-black/45 transition-colors duration-500 group-hover:text-white/60 group-focus-visible:text-white/60">
+                <div className="relative flex items-start justify-between text-[#191919]/50 transition-colors duration-500 group-hover:text-white/60 group-focus-visible:text-white/60">
                   <Icon size={22} strokeWidth={1.3} />
+
                   <ArrowUpRight
                     size={18}
                     className="opacity-30 transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100"
@@ -88,6 +89,7 @@ export default function Industries() {
                   <span className="text-[10px] uppercase tracking-[0.18em] opacity-35">
                     {industry.number}
                   </span>
+
                   <h3 className="mt-2 text-lg font-medium leading-snug tracking-tight">
                     {industry.name}
                   </h3>
@@ -107,7 +109,7 @@ export default function Industries() {
           >
             <span aria-hidden className={fillClass} />
 
-            <div className="relative flex items-start justify-end text-black/45 transition-colors duration-500 group-hover:text-white/60 group-focus-visible:text-white/60">
+            <div className="relative flex items-start justify-end text-[#191919]/50 transition-colors duration-500 group-hover:text-white/60 group-focus-visible:text-white/60">
               <ArrowUpRight
                 size={18}
                 className="opacity-30 transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100"
@@ -117,7 +119,7 @@ export default function Industries() {
             <div className="relative transition-colors duration-500 group-hover:text-white group-focus-visible:text-white">
               <h3 className="text-lg font-medium leading-snug tracking-tight">
                 Another sector?
-                <span className="block italic text-black/40 transition-colors duration-500 group-hover:text-white/50">
+                <span className="block italic text-[#D45539] transition-colors duration-500 group-hover:text-white/50">
                   Talk to us.
                 </span>
               </h3>

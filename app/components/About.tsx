@@ -10,7 +10,7 @@ const cards = [
     number: "01",
     title: "Market intelligence",
     text: "Live insight into salaries, supply and demand across GCC sectors.",
-    tone: "bg-[#dfe4db] text-[#111311]",
+    tone: "bg-[#F08043] text-[#191919]",
     ring: "border-black/10",
     logo: "opacity-25",
     offset: "",
@@ -19,7 +19,7 @@ const cards = [
     number: "02",
     title: "Specialist expertise",
     text: "Consultants who know their sector and the people who shape it.",
-    tone: "bg-[#191b19] text-white",
+    tone: "bg-[#191919] text-white",
     ring: "border-white/10",
     logo: "opacity-20",
     offset: "md:mt-14",
@@ -28,7 +28,7 @@ const cards = [
     number: "03",
     title: "Long-term partnerships",
     text: "Relationships built on trust, well beyond a single appointment.",
-    tone: "bg-[#dfe4db] text-[#111311]",
+    tone: "bg-[#D45539] text-[#191919]",
     ring: "border-black/10",
     logo: "opacity-25",
     offset: "md:mt-28",
@@ -37,7 +37,7 @@ const cards = [
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#f5f5f0] px-5 py-28 md:px-8 md:py-40">
+    <section id="about" className="bg-white px-5 py-28 md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         {/* Top */}
         <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
@@ -48,8 +48,8 @@ export default function About() {
             transition={{ duration: 0.9, ease }}
             className="flex flex-col justify-between"
           >
-            <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-black/45">
-              <span className="h-px w-8 bg-black/30" />
+            <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-[#191919]/45">
+              <span className="h-px w-8 bg-[#D45539]" />
               About Antons
             </p>
 
@@ -68,15 +68,15 @@ export default function About() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 1, ease }}
           >
-            <h2 className="max-w-5xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
+            <h2 className="max-w-5xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em] text-[#191919]">
               Talent is more than a
-              <span className="text-black/35"> vacancy.</span>
+              <span className="text-[#D45539]"> vacancy.</span>
               <br />
               It is the foundation of
-              <span className="italic"> growth.</span>
+              <span className="italic text-[#F08043]"> growth.</span>
             </h2>
 
-            <p className="mt-9 max-w-2xl text-base leading-7 text-black/55 md:text-lg">
+            <p className="mt-9 max-w-2xl text-base leading-7 text-[#191919]/55 md:text-lg">
               Antons partners with businesses across the GCC to identify,
               attract and connect them with exceptional professionals. Our
               approach combines market understanding, specialist recruitment
@@ -85,7 +85,7 @@ export default function About() {
 
             <a
               href="#services"
-              className="group mt-9 inline-flex items-center gap-3 border-b border-black pb-2 text-sm font-medium"
+              className="group mt-9 inline-flex items-center gap-3 border-b border-[#191919] pb-2 text-sm font-medium text-[#191919]"
             >
               Discover our approach
               <ArrowUpRight
@@ -112,6 +112,7 @@ export default function About() {
                 aria-hidden
                 className={`absolute -right-16 -top-16 h-52 w-52 rounded-full border transition-transform duration-700 group-hover:scale-125 ${card.ring}`}
               />
+
               <div
                 aria-hidden
                 className={`absolute -right-6 -top-6 h-28 w-28 rounded-full border transition-transform duration-700 group-hover:scale-125 ${card.ring}`}

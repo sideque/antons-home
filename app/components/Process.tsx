@@ -59,16 +59,16 @@ const indents = [
 ];
 
 const tones = [
-  "text-black/40",
-  "text-black/50",
-  "text-black/65",
-  "text-black/80",
-  "text-black",
+  "text-[#191919]/40",
+  "text-[#191919]/50",
+  "text-[#191919]/65",
+  "text-[#191919]/80",
+  "text-[#191919]",
 ];
 
 export default function Process() {
   return (
-    <section className="bg-[#f5f5f0] px-5 py-28 md:px-8 md:py-40">
+    <section className="bg-white px-5 py-28 md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
           {/* Heading */}
@@ -79,19 +79,19 @@ export default function Process() {
             transition={{ duration: 0.9, ease }}
             className="self-start lg:sticky lg:top-32"
           >
-            <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-black/40">
-              <span className="h-px w-8 bg-black/30" />
+            <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#191919]/40">
+              <span className="h-px w-8 bg-[#F08043]" />
               Our process
             </p>
 
-            <h2 className="mt-7 max-w-md text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
+            <h2 className="mt-7 max-w-md text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em] text-[#191919]">
               A thoughtful
               <br />
               approach to
-              <span className="italic text-black/30"> talent.</span>
+              <span className="italic text-[#D45539]"> talent.</span>
             </h2>
 
-            <p className="mt-8 max-w-sm text-sm leading-6 text-black/50">
+            <p className="mt-8 max-w-sm text-sm leading-6 text-[#191919]/50">
               From the first conversation to the final appointment, every stage
               is built around clarity, quality and partnership.
             </p>
@@ -109,9 +109,9 @@ export default function Process() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-6% 0px" }}
                   transition={{ duration: 0.8, delay: index * 0.07, ease }}
-                  className={`group grid grid-cols-[2.25rem_1fr_auto] gap-4 border-t border-black/10 py-8 last:border-b md:grid-cols-[4rem_1fr_auto] md:gap-8 md:py-11 ${indents[index]}`}
+                  className={`group grid grid-cols-[2.25rem_1fr_auto] gap-4 border-t border-[#191919]/10 py-8 last:border-b md:grid-cols-[4rem_1fr_auto] md:gap-8 md:py-11 ${indents[index]}`}
                 >
-                  <span className="pt-2 text-xs text-black/30">
+                  <span className="pt-2 text-xs text-[#D45539]/60">
                     {step.number}
                   </span>
 
@@ -122,12 +122,12 @@ export default function Process() {
                       {step.title}
                     </h3>
 
-                    <p className="mt-4 max-w-md text-sm leading-6 text-black/50">
+                    <p className="mt-4 max-w-md text-sm leading-6 text-[#191919]/50">
                       {step.description}
                     </p>
                   </div>
 
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 text-black/60 transition-all duration-500 group-hover:scale-105 group-hover:bg-black group-hover:text-white">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#191919]/10 text-[#191919]/60 transition-all duration-500 group-hover:scale-105 group-hover:bg-[#F08043] group-hover:text-[#191919]">
                     <Icon size={17} strokeWidth={1.5} />
                   </span>
                 </motion.li>
@@ -137,8 +137,8 @@ export default function Process() {
         </div>
 
         {/* Closing line */}
-        <div className="mt-16 flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] text-black/35">
-          <span className="h-px w-12 bg-black/20" />
+        <div className="mt-16 flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] text-[#191919]/35">
+          <span className="h-px w-12 bg-[#D45539]/50" />
           Built around your business
         </div>
       </div>

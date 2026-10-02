@@ -10,26 +10,26 @@ export default function FinalCTA() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#dfe4db] px-5 py-28 md:px-8 md:py-44"
+      className="relative overflow-hidden bg-[#D45539] px-5 py-28 md:px-8 md:py-44"
     >
       {/* Decoration */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-32 -top-32 h-[450px] w-[450px] rounded-full border border-black/10"
+        className="pointer-events-none absolute -right-32 -top-32 h-[450px] w-[450px] rounded-full border border-[#191919]/20"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-8 -top-8 h-[240px] w-[240px] rounded-full border border-black/[0.07]"
+        className="pointer-events-none absolute -right-8 -top-8 h-[240px] w-[240px] rounded-full border border-[#191919]/15"
       />
 
       <motion.div
         aria-hidden
         animate={{ rotate: 360 }}
         transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-        className="pointer-events-none absolute -bottom-52 -left-24 h-[520px] w-[520px] rounded-full border border-black/10"
+        className="pointer-events-none absolute -bottom-52 -left-24 h-[520px] w-[520px] rounded-full border border-[#191919]/20"
       >
         {/* A single marker makes the slow rotation readable */}
-        <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/40" />
+        <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#191919]/50" />
       </motion.div>
 
       <div className="relative mx-auto max-w-7xl">
@@ -38,9 +38,9 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-black/40"
+          className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#191919]/60"
         >
-          <span className="h-px w-8 bg-black/30" />
+          <span className="h-px w-8 bg-[#191919]/30" />
           Start a conversation
         </motion.p>
 
@@ -53,7 +53,7 @@ export default function FinalCTA() {
         >
           The right people
           <br />
-          <span className="italic text-black/35">are out there.</span>
+          <span className="italic text-[#F08043]">are out there.</span>
         </motion.h2>
 
         <motion.div
@@ -63,7 +63,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.9, delay: 0.2, ease }}
           className="mt-12 flex flex-col justify-between gap-10 md:flex-row md:items-end"
         >
-          <p className="max-w-lg text-base leading-7 text-black/55 md:text-lg">
+          <p className="max-w-lg text-base leading-7 text-[#191919]/75 md:text-lg">
             Tell us what you&apos;re building, and we&apos;ll help you find the
             people who can take it further.
           </p>
@@ -71,14 +71,14 @@ export default function FinalCTA() {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
             <Link
               href="/contact"
-              className="text-sm text-black/55 underline-offset-4 transition-colors hover:text-black hover:underline"
+              className="text-sm text-[#191919]/70 underline-offset-4 transition-colors hover:text-[#191919] hover:underline"
             >
               Send an enquiry
             </Link>
 
             <a
               href="mailto:info@antons.ae"
-              className="group inline-flex w-fit items-center gap-3 rounded-full bg-black px-7 py-4 text-sm font-medium text-white transition duration-300 hover:scale-[1.02]"
+              className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#191919] px-7 py-4 text-sm font-medium text-[#F08043] transition duration-300 hover:scale-[1.02]"
             >
               Talk to an expert
               <ArrowUpRight

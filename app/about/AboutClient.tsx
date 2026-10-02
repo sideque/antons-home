@@ -33,7 +33,7 @@ const values = [
 
 export const AboutClient = () => {
   return (
-    <main className="overflow-x-hidden bg-[#f5f5f0] text-[#111311]">
+    <main className="overflow-x-hidden bg-[#FFFFFF] text-[#191919]">
 
       {/* HERO */}
       <section className="px-5 pb-16 pt-36 md:px-8 md:pb-20 md:pt-44">
@@ -42,7 +42,7 @@ export const AboutClient = () => {
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
 
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#D45539]">
                 About Antons
               </p>
 
@@ -60,14 +60,14 @@ export const AboutClient = () => {
             >
               <h1 className="max-w-5xl text-5xl font-medium leading-[0.98] tracking-[-0.055em] md:text-7xl lg:text-[6.5rem]">
                 People are at the
-                <span className="text-black/30"> heart </span>
+                <span className="text-[#F08043]"> heart </span>
                 of
                 <br />
                 every
                 <span className="italic"> great business.</span>
               </h1>
 
-              <p className="mt-10 max-w-2xl text-base leading-7 text-black/55 md:text-lg">
+              <p className="mt-10 max-w-2xl text-base leading-7 text-[#191919]/55 md:text-lg">
                 Antons is a specialist recruitment partner connecting
                 ambitious businesses across the GCC with exceptional
                 professionals.
@@ -82,7 +82,7 @@ export const AboutClient = () => {
             animate="show"
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            className="group relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] md:mt-20 md:rounded-[2.5rem]"
+            className="group relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/20 md:mt-20 md:rounded-[2.5rem]"
           >
             <img
               src="/images/aboutImg/conMeeting.webp"
@@ -95,7 +95,7 @@ export const AboutClient = () => {
       </section>
 
       {/* STORY */}
-      <section className="border-t border-black/10 px-5 py-24 md:px-8 md:py-36">
+      <section className="border-t border-[#191919]/10 px-5 py-24 md:px-8 md:py-36">
         <div className="mx-auto max-w-7xl">
 
           <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-16">
@@ -107,7 +107,7 @@ export const AboutClient = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative order-1 aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] md:rounded-[2.5rem] lg:order-none"
+              className="group relative order-1 aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/20 md:rounded-[2.5rem] lg:order-none"
             >
               <img
                 src="/images/aboutImg/teamAss.webp"
@@ -117,7 +117,7 @@ export const AboutClient = () => {
             </motion.div>
 
             <div className="order-2 lg:order-none">
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#D45539]">
                 Our story
               </p>
 
@@ -125,7 +125,7 @@ export const AboutClient = () => {
                 Recruitment is about more than filling a position.
               </h2>
 
-              <div className="mt-10 max-w-lg space-y-6 text-base leading-7 text-black/55 md:text-lg">
+              <div className="mt-10 max-w-lg space-y-6 text-base leading-7 text-[#191919]/55 md:text-lg">
                 <p>
                   It is about understanding businesses, people and the
                   ambitions that connect them.
@@ -150,10 +150,10 @@ export const AboutClient = () => {
       </section>
 
       {/* VALUES */}
-      <section className="bg-[#111311] px-5 py-24 text-white md:px-8 md:py-36">
+      <section className="bg-[#191919] px-5 py-24 text-[#FFFFFF] md:px-8 md:py-36">
         <div className="mx-auto max-w-7xl">
 
-          <p className="text-xs uppercase tracking-[0.25em] text-white/35">
+          <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
             What we believe
           </p>
 
@@ -165,7 +165,7 @@ export const AboutClient = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-white/5 md:rounded-[2.5rem]"
+              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#FFFFFF]/5 md:rounded-[2.5rem]"
             >
               <img
                 src="/images/aboutImg/marInt.webp"
@@ -177,14 +177,14 @@ export const AboutClient = () => {
             <div>
               <h2 className="max-w-xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
                 The right
-                <span className="text-white/30"> connection </span>
+                <span className="text-[#F08043]"> connection </span>
                 creates
                 <br />
                 lasting
                 <span className="italic"> impact.</span>
               </h2>
 
-              <div className="mt-14 border-t border-white/10">
+              <div className="mt-14 border-t border-[#FFFFFF]/10">
 
                 {values.map((item, index) => (
                   <motion.div
@@ -194,9 +194,9 @@ export const AboutClient = () => {
                     viewport={{ once: true, amount: 0.4 }}
                     variants={fadeUp}
                     transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.08 }}
-                    className="group grid gap-5 border-b border-white/10 py-8 transition-colors hover:bg-white/[0.03] md:grid-cols-[60px_1fr_1fr] md:gap-8"
+                    className="group grid gap-5 border-b border-[#FFFFFF]/10 py-8 transition-colors hover:bg-[#F08043]/[0.06] md:grid-cols-[60px_1fr_1fr] md:gap-8"
                   >
-                    <span className="text-xs text-white/30">
+                    <span className="text-xs text-[#D45539]">
                       {item.number}
                     </span>
 
@@ -204,7 +204,7 @@ export const AboutClient = () => {
                       {item.title}
                     </h3>
 
-                    <p className="text-sm leading-6 text-white/40">
+                    <p className="text-sm leading-6 text-[#FFFFFF]/45">
                       {item.text}
                     </p>
                   </motion.div>
@@ -231,10 +231,10 @@ export const AboutClient = () => {
           alt="Antons team connecting talent with ambitious businesses"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-[#191919]/35" />
 
         <div className="absolute inset-0 flex items-end px-5 pb-10 md:items-center md:px-8 md:pb-0">
-          <p className="text-2xl font-medium tracking-[-0.03em] text-white md:text-4xl">
+          <p className="text-2xl font-medium tracking-[-0.03em] text-[#FFFFFF] md:text-4xl">
             Connecting talent with ambition.
           </p>
         </div>
@@ -247,7 +247,7 @@ export const AboutClient = () => {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
 
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#D45539]">
                 Our approach
               </p>
 
@@ -255,10 +255,10 @@ export const AboutClient = () => {
                 Thoughtful search.
                 <br />
                 Meaningful
-                <span className="text-black/30"> connections.</span>
+                <span className="text-[#F08043]"> connections.</span>
               </h2>
 
-              <p className="mt-8 max-w-md text-base leading-7 text-black/55 md:text-lg">
+              <p className="mt-8 max-w-md text-base leading-7 text-[#191919]/55 md:text-lg">
                 Every search starts with understanding. We take the time to
                 learn what makes your organisation unique, then combine
                 market insight with a carefully considered search process.
@@ -266,7 +266,7 @@ export const AboutClient = () => {
 
               <a
                 href="/contact"
-                className="group mt-9 inline-flex items-center gap-3 border-b border-black pb-2 text-sm font-medium"
+                className="group mt-9 inline-flex items-center gap-3 border-b border-[#191919] pb-2 text-sm font-medium"
               >
                 Start a conversation
 
@@ -283,7 +283,7 @@ export const AboutClient = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] md:rounded-[2.5rem]"
+              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/20 md:rounded-[2.5rem]"
             >
               <img
                 src="/images/aboutImg/search.webp"
@@ -306,30 +306,30 @@ export const AboutClient = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative overflow-hidden rounded-[2rem] bg-[#dfe4db] px-5 py-16 md:rounded-[2.5rem] md:px-8 md:py-24"
+            className="relative overflow-hidden rounded-[2rem] bg-[#F08043]/20 px-5 py-16 md:rounded-[2.5rem] md:px-8 md:py-24"
           >
             <img
               src="/images/aboutImg/rightPeoples.webp"
               alt=""
               className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/45" />
+            <div className="absolute inset-0 bg-[#191919]/45" />
 
             <div className="relative">
-              <p className="text-xs uppercase tracking-[0.25em] text-white/60">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#FFFFFF]/60">
                 Let&apos;s connect
               </p>
 
-              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-white md:text-7xl">
+              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#FFFFFF] md:text-7xl">
                 The right people
                 <br />
                 can change
-                <span className="text-white/40"> everything.</span>
+                <span className="text-[#F08043]"> everything.</span>
               </h2>
 
               <a
                 href="/contact"
-                className="group mt-10 inline-flex items-center gap-3 rounded-full bg-black px-7 py-4 text-sm font-medium text-white"
+                className="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#D45539] px-7 py-4 text-sm font-medium text-[#FFFFFF]"
               >
                 Talk to Antons
 

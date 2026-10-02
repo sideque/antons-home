@@ -49,14 +49,14 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#111311] px-5 py-28 text-white md:px-8 md:py-40"
+      className="bg-[#191919] px-5 py-28 text-white md:px-8 md:py-40"
     >
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]">
           <div className="flex flex-col justify-between">
             <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-white/35">
-              <span className="h-px w-8 bg-white/25" />
+              <span className="h-px w-8 bg-[#F08043]" />
               What we do
             </p>
 
@@ -79,7 +79,7 @@ export default function Services() {
               Recruitment solutions
               <br />
               built around
-              <span className="text-white/35"> your ambitions.</span>
+              <span className="text-[#F08043]"> your ambitions.</span>
             </h2>
 
             <p className="mt-9 max-w-2xl text-base leading-7 text-white/45 md:text-lg">
@@ -103,7 +103,7 @@ export default function Services() {
                 href="/services"
                 className="group relative grid grid-cols-[2.25rem_1fr_auto] items-start gap-4 border-b border-white/10 py-8 transition-[padding,background-color] duration-500 hover:bg-white/[0.03] md:grid-cols-[80px_1fr_1fr_auto] md:items-center md:gap-8 md:py-11 md:hover:px-5"
               >
-                <span className="pt-2 text-xs text-white/30 md:pt-0">
+                <span className="pt-2 text-xs text-[#F08043]/70 md:pt-0">
                   {service.number}
                 </span>
 
@@ -117,14 +117,14 @@ export default function Services() {
                   </p>
                 </div>
 
-                <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all duration-500 group-hover:rotate-12 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/40 text-[#F08043] transition-all duration-500 group-hover:rotate-12 group-hover:border-[#F08043] group-hover:bg-[#F08043] group-hover:text-[#191919]">
                   <ArrowUpRight size={18} />
                 </span>
 
                 {/* Hover line */}
                 <span
                   aria-hidden
-                  className="absolute -bottom-px left-0 h-px w-full origin-left scale-x-0 bg-white transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-x-100"
+                  className="absolute -bottom-px left-0 h-px w-full origin-left scale-x-0 bg-[#F08043] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-x-100"
                 />
               </Link>
             </motion.li>
@@ -140,7 +140,7 @@ export default function Services() {
 
           <a
             href="#contact"
-            className="group inline-flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition hover:bg-white/90"
+            className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#F08043] px-6 py-3.5 text-sm font-medium text-[#191919] transition hover:bg-[#D45539]"
           >
             Discuss your needs
             <ArrowUpRight

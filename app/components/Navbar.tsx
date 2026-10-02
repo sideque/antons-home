@@ -75,7 +75,7 @@ export default function Navbar() {
         variants={navVariants}
         className="fixed left-0 top-0 z-50 w-full px-4 py-4 md:px-8 md:py-5"
       >
-        <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between rounded-full border border-black/10 bg-white/80 px-4 shadow-sm backdrop-blur-xl md:px-5">
+        <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between rounded-full border border-[#F08043]/20 bg-[#191919]/95 px-4 text-[#F08043] shadow-sm backdrop-blur-xl md:px-5">
 
           {/* LOGO */}
           <motion.a
@@ -113,8 +113,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`group relative py-2 text-sm transition-colors duration-300 ${
                     active
-                      ? "font-medium text-black"
-                      : "text-black/55 hover:text-black"
+                      ? "font-medium text-[#F08043]"
+                      : "text-[#F08043]/65 hover:text-[#F08043]"
                   }`}
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.25 }}
@@ -123,7 +123,7 @@ export default function Navbar() {
 
                   {/* Active / Hover indicator */}
                   <motion.span
-                    className="absolute bottom-0 left-0 h-[2px] rounded-full bg-black"
+                    className="absolute bottom-0 left-0 h-[2px] rounded-full bg-[#D45539]"
                     initial={false}
                     animate={{
                       width: active ? "100%" : "0%",
@@ -153,7 +153,7 @@ export default function Navbar() {
             whileTap={{
               scale: 0.97,
             }}
-            className="group hidden items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white md:flex"
+            className="group hidden items-center gap-2 rounded-full bg-[#F08043] px-5 py-2.5 text-sm font-medium text-[#191919] md:flex"
           >
             Hire Talent
 
@@ -169,7 +169,7 @@ export default function Navbar() {
             onClick={() => setOpen(!open)}
             whileTap={{ scale: 0.9 }}
             aria-label="Toggle navigation"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#F08043]/30 lg:hidden"
           >
             <AnimatePresence mode="wait" initial={false}>
               {open ? (
@@ -221,7 +221,7 @@ export default function Navbar() {
               duration: 0.4,
               ease,
             }}
-            className="fixed inset-x-4 top-[100px] z-40 rounded-[2rem] border border-black/10 bg-white/95 p-5 shadow-xl backdrop-blur-xl lg:hidden"
+            className="fixed inset-x-4 top-[100px] z-40 rounded-[2rem] border border-[#F08043]/20 bg-[#191919]/95 p-5 text-[#F08043] shadow-xl backdrop-blur-xl lg:hidden"
           >
             <div className="flex flex-col">
               {links.map((link, index) => {
@@ -248,10 +248,10 @@ export default function Navbar() {
                     whileHover={{
                       x: 6,
                     }}
-                    className={`relative border-b border-black/10 py-4 text-lg last:border-0 ${
+                    className={`relative border-b border-[#F08043]/20 py-4 text-lg last:border-0 ${
                       active
-                        ? "font-semibold text-black"
-                        : "font-medium text-black/60"
+                        ? "font-semibold text-[#F08043]"
+                        : "font-medium text-[#F08043]/70"
                     }`}
                   >
                     <span className="flex items-center justify-between">
@@ -269,7 +269,7 @@ export default function Navbar() {
                     {active && (
                       <motion.span
                         layoutId="mobile-active"
-                        className="absolute bottom-0 left-0 h-[2px] w-8 rounded-full bg-black"
+                        className="absolute bottom-0 left-0 h-[2px] w-8 rounded-full bg-[#D45539]"
                         transition={{
                           duration: 0.35,
                           ease,
@@ -299,7 +299,7 @@ export default function Navbar() {
                 whileTap={{
                   scale: 0.97,
                 }}
-                className="mt-4 flex items-center justify-center gap-2 rounded-full bg-black py-3.5 text-sm font-medium text-white"
+                className="mt-4 flex items-center justify-center gap-2 rounded-full bg-[#F08043] py-3.5 text-sm font-medium text-[#191919]"
               >
                 Hire Talent
                 <ArrowUpRight size={16} />

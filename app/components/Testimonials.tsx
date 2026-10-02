@@ -53,7 +53,7 @@ export default function Testimonials() {
   const testimonial = testimonials[active];
 
   return (
-    <section className="bg-[#191b19] px-5 py-28 text-white md:px-8 md:py-40">
+    <section className="bg-[#191919] px-5 py-28 text-[#F08043] md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <motion.div
@@ -62,8 +62,8 @@ export default function Testimonials() {
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 1, ease }}
         >
-          <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-white/35">
-            <span className="h-px w-8 bg-white/25" />
+          <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#D45539]">
+            <span className="h-px w-8 bg-[#D45539]/40" />
             Client perspective
           </p>
 
@@ -71,22 +71,22 @@ export default function Testimonials() {
             Partnerships that
             <br />
             create
-            <span className="italic text-white/35"> impact.</span>
+            <span className="italic text-[#D45539]"> impact.</span>
           </h2>
         </motion.div>
 
         {/* Body */}
-        <div className="mt-16 grid gap-8 border-t border-white/10 pt-10 md:mt-24 md:pt-12 lg:grid-cols-[0.7fr_1.3fr]">
+        <div className="mt-16 grid gap-8 border-t border-[#F08043]/15 pt-10 md:mt-24 md:pt-12 lg:grid-cols-[0.7fr_1.3fr]">
           <div className="flex items-start justify-between lg:flex-col lg:justify-between">
             <Quote
               size={40}
               strokeWidth={1}
               aria-hidden
-              className="text-white/25"
+              className="text-[#D45539]"
             />
 
-            <p className="text-xs tracking-[0.2em] text-white/35">
-              <span className="text-white/80">{pad(active + 1)}</span>
+            <p className="text-xs tracking-[0.2em] text-[#F08043]/50">
+              <span className="text-[#F08043]">{pad(active + 1)}</span>
               {" / "}
               {pad(testimonials.length)}
             </p>
@@ -113,7 +113,7 @@ export default function Testimonials() {
 
                   <figcaption className="mt-10">
                     <p className="text-sm font-medium">{testimonial.name}</p>
-                    <p className="mt-1 text-sm text-white/40">
+                    <p className="mt-1 text-sm text-[#F08043]/60">
                       {testimonial.role}, {testimonial.company}
                     </p>
                   </figcaption>
@@ -136,8 +136,8 @@ export default function Testimonials() {
                     <span
                       className={`block h-px transition-all duration-500 ${
                         index === active
-                          ? "w-12 bg-white"
-                          : "w-6 bg-white/25 group-hover:bg-white/60"
+                          ? "w-12 bg-[#F08043]"
+                          : "w-6 bg-[#F08043]/30 group-hover:bg-[#F08043]/60"
                       }`}
                     />
                   </button>
@@ -149,7 +149,7 @@ export default function Testimonials() {
                   type="button"
                   onClick={() => step(-1)}
                   aria-label="Previous testimonial"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all duration-300 hover:bg-white hover:text-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/30 transition-all duration-300 hover:bg-[#F08043] hover:text-[#191919]"
                 >
                   <ArrowLeft size={17} />
                 </button>
@@ -158,7 +158,7 @@ export default function Testimonials() {
                   type="button"
                   onClick={() => step(1)}
                   aria-label="Next testimonial"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all duration-300 hover:bg-white hover:text-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/30 transition-all duration-300 hover:bg-[#F08043] hover:text-[#191919]"
                 >
                   <ArrowRight size={17} />
                 </button>

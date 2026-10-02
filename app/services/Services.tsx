@@ -60,7 +60,7 @@ const valueAdded = [
 
 const Services = () => {
   return (
-    <main className="overflow-x-hidden bg-[#f5f5f0] text-[#111311]">
+    <main className="overflow-x-hidden bg-[#FFFFFF] text-[#191919]">
 
       {/* HERO */}
       <section className="px-5 pb-16 pt-36 md:px-8 md:pb-20 md:pt-44">
@@ -69,7 +69,7 @@ const Services = () => {
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
 
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#D45539]">
                 Our services
               </p>
 
@@ -87,12 +87,17 @@ const Services = () => {
             >
               <h1 className="max-w-5xl text-5xl font-medium leading-[0.96] tracking-[-0.055em] md:text-7xl lg:text-[6.5rem]">
                 Recruitment
+
                 <br />
+
                 solutions built
-                <span className="text-black/30"> around you.</span>
+
+                <span className="text-[#D45539]/70">
+                  {" "}around you.
+                </span>
               </h1>
 
-              <p className="mt-10 max-w-2xl text-base leading-7 text-black/55 md:text-lg">
+              <p className="mt-10 max-w-2xl text-base leading-7 text-[#191919]/55 md:text-lg">
                 From permanent recruitment to flexible staffing and executive
                 search, we provide talent solutions designed around your
                 organisation&apos;s needs.
@@ -107,7 +112,7 @@ const Services = () => {
             animate="show"
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            className="group relative mt-16 h-[300px] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] md:mt-20 md:h-[560px]"
+            className="group relative mt-16 h-[300px] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/15 md:mt-20 md:h-[560px]"
           >
             <img
               src="/images/serviceImg/teamMet.webp"
@@ -120,18 +125,20 @@ const Services = () => {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-[#111311] px-5 py-24 text-white md:px-8 md:py-36">
+      <section className="bg-[#191919] px-5 py-24 text-[#FFFFFF] md:px-8 md:py-36">
         <div className="mx-auto max-w-7xl">
 
           <div className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr] lg:gap-12">
-            <p className="text-xs uppercase tracking-[0.25em] text-white/35">
+
+            <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
               What we offer
             </p>
 
-            <p className="max-w-md text-sm leading-6 text-white/40">
+            <p className="max-w-md text-sm leading-6 text-[#FFFFFF]/40">
               Flexible recruitment and workforce solutions designed to help
               businesses find, manage and retain the right talent.
             </p>
+
           </div>
 
           <div className="mt-14 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-16">
@@ -143,7 +150,7 @@ const Services = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-white/5 lg:sticky lg:top-32"
+              className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#FFFFFF]/5 lg:sticky lg:top-32"
             >
               <img
                 src="/images/serviceImg/work.webp"
@@ -153,7 +160,8 @@ const Services = () => {
             </motion.div>
 
             {/* Editorial service rows */}
-            <div className="border-t border-white/10">
+            <div className="border-t border-[#FFFFFF]/10">
+
               {services.map((service, index) => (
                 <motion.a
                   href="/contact"
@@ -165,9 +173,10 @@ const Services = () => {
                     duration: 0.55,
                     delay: index * 0.06,
                   }}
-                  className="group grid gap-4 border-b border-white/10 py-8 transition-colors hover:bg-white/[0.03] md:grid-cols-[50px_1fr_auto] md:items-center md:gap-6"
+                  className="group grid gap-4 border-b border-[#FFFFFF]/10 py-8 transition-colors hover:bg-[#F08043]/[0.06] md:grid-cols-[50px_1fr_auto] md:items-center md:gap-6"
                 >
-                  <span className="text-xs text-white/25">
+
+                  <span className="text-xs text-[#F08043]/60">
                     {service.number}
                   </span>
 
@@ -176,19 +185,21 @@ const Services = () => {
                       {service.title}
                     </h2>
 
-                    <p className="mt-2 max-w-md text-sm leading-6 text-white/40">
+                    <p className="mt-2 max-w-md text-sm leading-6 text-[#FFFFFF]/40">
                       {service.description}
                     </p>
                   </div>
 
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/40 text-[#F08043] transition-all duration-300 group-hover:border-[#F08043] group-hover:bg-[#F08043] group-hover:text-[#191919]">
                     <ArrowUpRight
                       size={17}
                       className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                     />
                   </div>
+
                 </motion.a>
               ))}
+
             </div>
 
           </div>
@@ -209,10 +220,11 @@ const Services = () => {
           alt="Antons workforce solutions across the GCC"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/35" />
+
+        <div className="absolute inset-0 bg-[#191919]/45" />
 
         <div className="absolute inset-0 flex items-end px-5 pb-10 md:items-center md:px-8 md:pb-0">
-          <p className="text-2xl font-medium tracking-[-0.03em] text-white md:text-4xl">
+          <p className="text-2xl font-medium tracking-[-0.03em] text-[#FFFFFF] md:text-4xl">
             Talent built around your business.
           </p>
         </div>
@@ -231,7 +243,7 @@ const Services = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative order-1 aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#dfe4db] lg:order-none"
+              className="group relative order-1 aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/15 lg:order-none"
             >
               <img
                 src="/images/serviceImg/onboarding.webp"
@@ -241,22 +253,26 @@ const Services = () => {
             </motion.div>
 
             <div className="order-2 lg:order-none">
-              <p className="text-xs uppercase tracking-[0.25em] text-black/40">
+
+              <p className="text-xs uppercase tracking-[0.25em] text-[#D45539]">
                 Value added services
               </p>
 
               <h2 className="mt-6 max-w-xl text-4xl font-medium leading-[1.05] tracking-[-0.045em] md:text-6xl">
                 More than
-                <span className="text-black/30"> recruitment.</span>
+
+                <span className="text-[#D45539]/70">
+                  {" "}recruitment.
+                </span>
               </h2>
 
-              <p className="mt-7 max-w-lg text-base leading-7 text-black/50 md:text-lg">
+              <p className="mt-7 max-w-lg text-base leading-7 text-[#191919]/50 md:text-lg">
                 We support organisations throughout the recruitment journey,
                 helping create a smoother experience from initial search to
                 onboarding.
               </p>
 
-              <div className="mt-12 border-t border-black/10">
+              <div className="mt-12 border-t border-[#191919]/10">
 
                 {valueAdded.map((item, index) => (
                   <motion.div
@@ -265,10 +281,13 @@ const Services = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.08 }}
-                    className="flex items-center gap-5 border-b border-black/10 py-6"
+                    className="flex items-center gap-5 border-b border-[#191919]/10 py-6"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-black/10">
-                      <Check size={15} strokeWidth={1.5} />
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#D45539]/30 text-[#D45539]">
+                      <Check
+                        size={15}
+                        strokeWidth={1.5}
+                      />
                     </div>
 
                     <span className="text-lg font-medium tracking-tight">
@@ -278,6 +297,7 @@ const Services = () => {
                 ))}
 
               </div>
+
             </div>
 
           </div>
@@ -294,36 +314,43 @@ const Services = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative overflow-hidden rounded-[2rem] bg-[#dfe4db] px-5 py-16 md:px-8 md:py-24"
+            className="relative overflow-hidden rounded-[2rem] bg-[#F08043]/15 px-5 py-16 md:px-8 md:py-24"
           >
+
             <img
               src="/images/serviceImg/working.webp"
               alt=""
               className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/45" />
+
+            <div className="absolute inset-0 bg-[#191919]/55" />
 
             <div className="relative">
-              <p className="text-xs uppercase tracking-[0.25em] text-white/60">
+
+              <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
                 Let&apos;s work together
               </p>
 
-              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-white md:text-7xl">
+              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#FFFFFF] md:text-7xl">
                 Looking for the
+
                 <br />
-                <span className="text-white/40">right people?</span>
+
+                <span className="text-[#F08043]">
+                  right people?
+                </span>
               </h2>
 
               <div className="mt-10 flex flex-col justify-between gap-8 md:flex-row md:items-end">
 
-                <p className="max-w-lg text-base leading-7 text-white/70 md:text-lg">
+                <p className="max-w-lg text-base leading-7 text-[#FFFFFF]/70 md:text-lg">
                   Tell us what you need and our team will help you find the
                   right talent solution for your organisation.
                 </p>
 
                 <a
                   href="/contact"
-                  className="group flex w-fit items-center gap-3 rounded-full bg-black px-7 py-4 text-sm font-medium text-white transition hover:scale-[1.02]"
+                  className="group flex w-fit items-center gap-3 rounded-full bg-[#F08043] px-7 py-4 text-sm font-medium text-[#191919] transition hover:scale-[1.02]"
                 >
                   Hire talent
 
@@ -334,7 +361,9 @@ const Services = () => {
                 </a>
 
               </div>
+
             </div>
+
           </motion.div>
 
         </div>
