@@ -102,7 +102,7 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#191919] px-6 py-3.5 text-sm font-medium text-[#F08043] transition duration-300 hover:scale-[1.02]"
+                className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#F08043] px-6 py-3.5 text-sm font-medium text-[#191919] transition duration-300 hover:scale-[1.02]"
               >
                 Find exceptional talent
                 <ArrowUpRight
