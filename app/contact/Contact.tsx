@@ -15,7 +15,6 @@ import { useState, type FormEvent } from "react";
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
-/* ============================ HERO ============================ */
 
 function ContactHero() {
   return (
@@ -102,8 +101,8 @@ function ContactInfo() {
       className="flex flex-col justify-between"
     >
       <div>
-        <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-[#FFFFFF]/40">
-          <span className="h-px w-8 bg-[#FFFFFF]/30" />
+        <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.25em] text-[#191919]/45">
+          <span className="h-px w-8 bg-[#191919]/30" />
           Get in touch
         </p>
 
@@ -112,7 +111,7 @@ function ContactInfo() {
           <span className="text-[#F08043]"> meaningful.</span>
         </h2>
 
-        <p className="mt-8 max-w-md text-sm leading-6 text-[#FFFFFF]/50">
+        <p className="mt-8 max-w-md text-sm leading-6 text-[#191919]/55">
           Tell us what you&apos;re looking for and one of our consultants will
           get back to you shortly.
         </p>
@@ -128,7 +127,7 @@ function ContactInfo() {
               href={item.href}
               className="group flex w-fit items-center gap-4"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#FFFFFF]/10 bg-[#FFFFFF]/[0.04]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#191919]/10 bg-white">
                 <Icon
                   size={17}
                   strokeWidth={1.5}
@@ -137,11 +136,11 @@ function ContactInfo() {
               </span>
 
               <span>
-                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#FFFFFF]/30">
+                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#191919]/45">
                   {item.label}
                 </span>
 
-                <span className="mt-1 block text-sm text-[#FFFFFF]/75 transition-colors group-hover:text-[#F08043]">
+                <span className="mt-1 block text-sm text-[#191919] transition-colors group-hover:text-[#F08043]">
                   {item.value}
                 </span>
               </span>
@@ -203,9 +202,9 @@ const services = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-[#FFFFFF]/10 bg-[#FFFFFF]/[0.04] px-4 text-base text-[#FFFFFF] outline-none transition placeholder:text-[#FFFFFF]/25 focus:border-[#F08043]/60 focus:bg-[#FFFFFF]/[0.06] md:text-sm";
+  "w-full rounded-xl border border-[#191919]/10 bg-white px-4 text-base text-[#191919] outline-none transition placeholder:text-[#191919]/30 focus:border-[#D45539]/60 focus:bg-white md:text-sm";
 
-const labelClass = "mb-2 block text-xs text-[#FFFFFF]/45";
+const labelClass = "mb-2 block text-xs text-[#191919]/55";
 
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -255,7 +254,7 @@ function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-8% 0px" }}
       transition={{ duration: 0.9, ease }}
-      className="rounded-[2rem] border border-[#FFFFFF]/10 bg-[#FFFFFF]/[0.035] p-6 sm:p-8 md:p-12"
+      className="rounded-[2rem] border border-[#191919]/10 bg-white p-6 sm:p-8 md:p-12"
     >
       <h3 className="text-3xl font-medium tracking-[-0.04em] md:text-4xl">
         Tell us what you need.
@@ -293,12 +292,12 @@ function ContactForm() {
               id="service"
               name="service"
               defaultValue=""
-              className={`${inputClass} h-14 cursor-pointer appearance-none pr-12 text-[#FFFFFF]/70`}
+              className={`${inputClass} h-14 cursor-pointer appearance-none pr-12 text-[#191919]/70`}
             >
               <option
                 value=""
                 disabled
-                className="bg-[#191919]"
+                className="bg-white"
               >
                 Select a service
               </option>
@@ -307,7 +306,7 @@ function ContactForm() {
                 <option
                   key={service.value}
                   value={service.value}
-                  className="bg-[#191919]"
+                  className="bg-white"
                 >
                   {service.label}
                 </option>
@@ -343,7 +342,7 @@ function ContactForm() {
           whileHover={{ scale: 1.015 }}
           whileTap={{ scale: 0.99 }}
           transition={{ duration: 0.3, ease }}
-          className="group flex w-full items-center justify-center gap-3 rounded-full bg-[#F08043] px-6 py-4 text-sm font-medium text-[#191919]"
+          className="group flex w-full items-center justify-center gap-3 rounded-full border border-[#D45539] bg-white px-6 py-4 text-sm font-medium text-[#D45539]"
         >
           Send enquiry
 
@@ -355,7 +354,7 @@ function ContactForm() {
 
         <p
           role="status"
-          className="min-h-[1.5rem] text-xs leading-6 text-[#FFFFFF]/40"
+          className="min-h-[1.5rem] text-xs leading-6 text-[#191919]/55"
         >
           {submitted
             ? "Your email app should open with your enquiry ready to send. If it doesn't, write to info@antons.ae."
@@ -386,8 +385,8 @@ const verticals = Array.from(
 
 const fronds = [-165, -135, -105, -75, -45, -15];
 
-const land = "#191919";
-const sea = "#191919";
+const land = "#FFFFFF";
+const sea = "#FFFFFF";
 const sage = "240,128,67";
 
 const coast =
@@ -402,7 +401,7 @@ function MapVisual() {
         viewport={{ once: true, margin: "-8% 0px" }}
         transition={{ duration: 1.2, ease }}
         aria-label="Stylised map of Dubai showing the Antons office at Al Moosa Tower 2, Dubai World Trade Centre 1"
-        className="relative h-[340px] overflow-hidden rounded-[2rem] bg-[#191919] md:h-[460px] lg:h-[520px]"
+        className="relative h-[340px] overflow-hidden rounded-[2rem] border border-[#191919]/10 bg-white md:h-[460px] lg:h-[520px]"
       >
 
         {/* Map artwork — slow breathing keeps it quietly alive */}
@@ -699,25 +698,25 @@ function MapVisual() {
 
         {/* Title and compass */}
         <div className="pointer-events-none absolute left-6 top-6 md:left-9 md:top-9">
-          <p className="text-4xl font-medium italic leading-none tracking-[-0.05em] text-[#FFFFFF]/90 md:text-6xl">
+          <p className="text-4xl font-medium italic leading-none tracking-[-0.05em] text-[#191919] md:text-6xl">
             Dubai
           </p>
 
-          <p className="mt-3 text-[10px] uppercase tracking-[0.22em] text-[#FFFFFF]/35">
+          <p className="mt-3 text-[10px] uppercase tracking-[0.22em] text-[#191919]/45">
             25.23° N · 55.29° E
           </p>
         </div>
 
         <div
           aria-hidden
-          className="pointer-events-none absolute right-6 top-6 flex flex-col items-center gap-1 text-[10px] tracking-[0.2em] text-[#FFFFFF]/40 md:right-9 md:top-9"
+          className="pointer-events-none absolute right-6 top-6 flex flex-col items-center gap-1 text-[10px] tracking-[0.2em] text-[#191919]/45 md:right-9 md:top-9"
         >
           N
 
-          <span className="h-8 w-px bg-[#FFFFFF]/30" />
+          <span className="h-8 w-px bg-[#191919]/30" />
         </div>
 
-        <p className="pointer-events-none absolute bottom-6 right-6 text-[10px] uppercase tracking-[0.22em] text-[#FFFFFF]/30 md:bottom-9 md:right-9">
+        <p className="pointer-events-none absolute bottom-6 right-6 text-[10px] uppercase tracking-[0.22em] text-[#191919]/45 md:bottom-9 md:right-9">
           Trade Centre district
         </p>
 
@@ -736,7 +735,7 @@ function MapVisual() {
                 repeat: Infinity,
                 ease: "easeOut",
               }}
-              className="absolute inset-0 rounded-full bg-[#F08043]/25"
+              className="absolute inset-0 rounded-full border border-[#D45539]/40"
             />
 
             <motion.span
@@ -753,7 +752,7 @@ function MapVisual() {
               className="absolute inset-[-14px] rounded-full border border-[#F08043]/50"
             />
 
-            <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#F08043] text-[#191919]">
+            <span className="relative flex h-14 w-14 items-center justify-center rounded-full border border-[#D45539] bg-white text-[#D45539]">
               <MapPin size={22} strokeWidth={1.5} />
             </span>
           </div>
@@ -770,17 +769,17 @@ function MapVisual() {
               delay: 0.5,
               ease,
             }}
-            className="whitespace-nowrap rounded-xl border border-[#FFFFFF]/10 bg-[#191919] px-4 py-3 text-center md:text-left"
+            className="whitespace-nowrap rounded-xl border border-[#191919]/10 bg-white px-4 py-3 text-center md:text-left"
           >
             <span className="block text-[11px] font-medium tracking-[0.3em] text-[#F08043]">
               ANTONS
             </span>
 
-            <span className="mt-1 block text-sm text-[#FFFFFF]/70">
+            <span className="mt-1 block text-sm text-[#191919]">
               Al Moosa Tower 2
             </span>
 
-            <span className="block text-xs text-[#FFFFFF]/40">
+            <span className="block text-xs text-[#191919]/55">
               Dubai, UAE
             </span>
           </motion.div>
@@ -798,7 +797,7 @@ const mapsUrl =
 
 function LocationSection() {
   return (
-    <section className="bg-[#F08043]/10 px-5 py-28 md:px-8 md:py-40">
+    <section className="bg-white px-5 py-28 md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
 
         <motion.div
@@ -835,7 +834,7 @@ function LocationSection() {
             rel="noreferrer"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3, ease }}
-            className="group flex w-fit items-center gap-3 rounded-full bg-[#191919] px-6 py-3.5 text-sm font-medium text-[#FFFFFF]"
+            className="group flex w-fit items-center gap-3 rounded-full border border-[#191919] bg-white px-6 py-3.5 text-sm font-medium text-[#191919]"
           >
             Open in Maps
 
@@ -856,7 +855,6 @@ function LocationSection() {
   );
 }
 
-/* ============================ PAGE ============================ */
 
 export default function Contact() {
   return (
@@ -864,7 +862,7 @@ export default function Contact() {
 
       <ContactHero />
 
-      <section className="bg-[#191919] px-5 py-28 text-[#FFFFFF] md:px-8 md:py-40">
+      <section className="bg-white px-5 py-28 text-[#191919] md:px-8 md:py-40">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.7fr_1.3fr] lg:gap-12">
           <ContactInfo />
           <ContactForm />
