@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, MotionConfig } from "framer-motion";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -11,23 +12,6 @@ const headingLines = [
   { text: "people.", className: "text-[#D45539]" },
   { text: "Exceptional", className: "italic pr-[0.06em]" },
   { text: "businesses.", className: "" },
-];
-
-/* Meridian widths cycle through phases so the globe appears to turn */
-const meridians = [
-  [140, 70, 0, 70, 140],
-  [70, 0, 70, 140, 70],
-  [0, 70, 140, 70, 0],
-];
-
-const latitudes = [-90, -45, 0, 45, 90];
-
-const hub = { x: 232, y: 202 }; // Dubai
-const nodes = [
-  { x: 112, y: 152, path: "M232 202 Q 160 120 112 152" },
-  { x: 288, y: 130, path: "M232 202 Q 290 170 288 130" },
-  { x: 150, y: 268, path: "M232 202 Q 200 270 150 268" },
-  { x: 298, y: 264, path: "M232 202 Q 280 250 298 264" },
 ];
 
 export default function Hero() {
@@ -127,113 +111,20 @@ export default function Hero() {
             transition={{ duration: 1.2, delay: 0.3, ease }}
             className="relative mx-auto aspect-[4/4.3] w-full max-w-[500px] lg:mr-0 lg:justify-self-end"
           >
-            <div className="absolute inset-0 overflow-hidden rounded-[2rem] bg-[#191919]">
-              <svg
-                viewBox="0 0 400 400"
-                fill="none"
-                role="img"
-                aria-label="A network of connections radiating from Dubai across the region"
-                className="absolute inset-0 h-full w-full"
-              >
-                {/* Slow orbit */}
-                <motion.circle
-                  cx="200"
-                  cy="200"
-                  r="172"
-                  stroke="rgba(240,128,67,0.25)"
-                  strokeDasharray="2 7"
-                  style={{ transformOrigin: "200px 200px" }}
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-                />
+            <div className="group absolute inset-0 overflow-hidden rounded-[2rem] border border-[#191919]/10 bg-white">
+              <Image
+                src="/images/aboutImg/conMeeting.webp"
+                alt="Antons consultants meeting with a client in a modern GCC office"
+                fill
+                priority
+                sizes="(min-width: 1024px) 500px, (min-width: 640px) 500px, 100vw"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+              />
 
-                {/* Globe */}
-                <circle cx="200" cy="200" r="140" stroke="rgba(240,128,67,0.3)" />
-
-                {latitudes.map((offset) => {
-                  const half = Math.sqrt(140 * 140 - offset * offset);
-                  return (
-                    <line
-                      key={offset}
-                      x1={200 - half}
-                      x2={200 + half}
-                      y1={200 + offset}
-                      y2={200 + offset}
-                      stroke="rgba(240,128,67,0.12)"
-                    />
-                  );
-                })}
-
-                {meridians.map((frames, index) => (
-                  <motion.ellipse
-                    key={index}
-                    cx="200"
-                    cy="200"
-                    rx={frames[0]}
-                    ry="140"
-                    stroke="rgba(240,128,67,0.16)"
-                    animate={{ rx: frames }}
-                    transition={{ duration: 36, repeat: Infinity, ease: "linear" }}
-                  />
-                ))}
-
-                {/* Connections */}
-                {nodes.map((node, index) => (
-                  <g key={index}>
-                    <motion.path
-                      d={node.path}
-                      stroke="rgba(240,128,67,0.6)"
-                      strokeWidth="0.8"
-                      initial={{ pathLength: 0, opacity: 0 }}
-                      animate={{ pathLength: 1, opacity: 1 }}
-                      transition={{
-                        duration: 1.6,
-                        delay: 1.2 + index * 0.3,
-                        ease,
-                      }}
-                    />
-                    <motion.circle
-                      cx={node.x}
-                      cy={node.y}
-                      r="2.5"
-                      fill="rgba(240,128,67,0.8)"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 2.2 + index * 0.3, duration: 0.6 }}
-                    />
-                  </g>
-                ))}
-
-                {/* Dubai hub */}
-                <motion.circle
-                  cx={hub.x}
-                  cy={hub.y}
-                  r="4"
-                  stroke="#F08043"
-                  strokeWidth="0.8"
-                  animate={{ r: [4, 20], opacity: [0.6, 0] }}
-                  transition={{ duration: 3.2, repeat: Infinity, ease: "easeOut" }}
-                />
-                <circle cx={hub.x} cy={hub.y} r="4" fill="#F08043" />
-                <text
-                  x={hub.x + 12}
-                  y={hub.y - 10}
-                  fill="rgba(240,128,67,0.7)"
-                  fontSize="9"
-                  letterSpacing="2"
-                >
-                  DUBAI
-                </text>
-              </svg>
-
-              <p className="absolute left-7 top-7 text-[10px] uppercase tracking-[0.22em] text-[#F08043]/60">
+              {/* Location chip */}
+              <p className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-[#191919]/10 bg-white px-4 py-2 text-[10px] font-medium uppercase tracking-[0.22em] text-[#191919]">
+                <MapPin size={12} className="text-[#F08043]" />
                 Dubai, UAE
-              </p>
-
-              <p className="absolute bottom-7 left-7 max-w-[11rem] text-sm leading-5 text-[#F08043]/80">
-                Connecting talent
-                <br />
-                <span className="text-[#D45539]">across the GCC</span>
               </p>
             </div>
 
@@ -241,9 +132,11 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, 6, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-5 right-4 rounded-2xl border border-[#191919]/20 bg-[#D45539] px-5 py-4 md:-right-4"
+              className="absolute -bottom-5 right-4 rounded-2xl border border-[#D45539] bg-white px-5 py-4 md:-right-4"
             >
-              <p className="text-2xl font-medium tracking-tight">GCC</p>
+              <p className="text-2xl font-medium tracking-tight text-[#D45539]">
+                GCC
+              </p>
               <p className="text-xs text-[#191919]/70">Talent network</p>
             </motion.div>
           </motion.div>
