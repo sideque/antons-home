@@ -82,7 +82,7 @@ export const AboutClient = () => {
             animate="show"
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            className="group relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/20 md:mt-20 md:rounded-[2.5rem]"
+            className="group relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-[2rem] bg-white md:mt-20 md:rounded-[2.5rem]"
           >
             <img
               src="/images/aboutImg/conMeeting.webp"
@@ -107,7 +107,7 @@ export const AboutClient = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative order-1 aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/20 md:rounded-[2.5rem] lg:order-none"
+              className="group relative order-1 aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-white md:rounded-[2.5rem] lg:order-none"
             >
               <img
                 src="/images/aboutImg/teamAss.webp"
@@ -150,7 +150,7 @@ export const AboutClient = () => {
       </section>
 
       {/* VALUES */}
-      <section className="bg-[#191919] px-5 py-24 text-[#FFFFFF] md:px-8 md:py-36">
+      <section className="bg-white px-5 py-24 text-[#191919] md:px-8 md:py-36">
         <div className="mx-auto max-w-7xl">
 
           <p className="text-xs uppercase tracking-[0.25em] text-[#F08043]">
@@ -165,7 +165,7 @@ export const AboutClient = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#FFFFFF]/5 md:rounded-[2.5rem]"
+              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-white md:rounded-[2.5rem]"
             >
               <img
                 src="/images/aboutImg/marInt.webp"
@@ -184,7 +184,7 @@ export const AboutClient = () => {
                 <span className="italic"> impact.</span>
               </h2>
 
-              <div className="mt-14 border-t border-[#FFFFFF]/10">
+              <div className="mt-14 border-t border-[#191919]/10">
 
                 {values.map((item, index) => (
                   <motion.div
@@ -194,7 +194,7 @@ export const AboutClient = () => {
                     viewport={{ once: true, amount: 0.4 }}
                     variants={fadeUp}
                     transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.08 }}
-                    className="group grid gap-5 border-b border-[#FFFFFF]/10 py-8 transition-colors hover:bg-[#F08043]/[0.06] md:grid-cols-[60px_1fr_1fr] md:gap-8"
+                    className="group grid gap-5 border-b border-[#191919]/10 py-8 transition-colors hover:bg-white md:grid-cols-[60px_1fr_1fr] md:gap-8"
                   >
                     <span className="text-xs text-[#D45539]">
                       {item.number}
@@ -204,7 +204,7 @@ export const AboutClient = () => {
                       {item.title}
                     </h3>
 
-                    <p className="text-sm leading-6 text-[#FFFFFF]/45">
+                    <p className="text-sm leading-6 text-[#191919]/55">
                       {item.text}
                     </p>
                   </motion.div>
@@ -234,7 +234,7 @@ export const AboutClient = () => {
         <div className="absolute inset-0 bg-[#191919]/35" />
 
         <div className="absolute inset-0 flex items-end px-5 pb-10 md:items-center md:px-8 md:pb-0">
-          <p className="text-2xl font-medium tracking-[-0.03em] text-[#FFFFFF] md:text-4xl">
+          <p className="text-2xl font-medium tracking-[-0.03em] text-[#191919] md:text-4xl">
             Connecting talent with ambition.
           </p>
         </div>
@@ -283,7 +283,7 @@ export const AboutClient = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={imageReveal}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-[#F08043]/20 md:rounded-[2.5rem]"
+              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2rem] bg-white md:rounded-[2.5rem]"
             >
               <img
                 src="/images/aboutImg/search.webp"
@@ -306,7 +306,7 @@ export const AboutClient = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={imageReveal}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative overflow-hidden rounded-[2rem] bg-[#F08043]/20 px-5 py-16 md:rounded-[2.5rem] md:px-8 md:py-24"
+            className="relative overflow-hidden rounded-[2rem] bg-white px-5 py-16 md:rounded-[2.5rem] md:px-8 md:py-24"
           >
             <img
               src="/images/aboutImg/rightPeoples.webp"
@@ -316,11 +316,11 @@ export const AboutClient = () => {
             <div className="absolute inset-0 bg-[#191919]/45" />
 
             <div className="relative">
-              <p className="text-xs uppercase tracking-[0.25em] text-[#FFFFFF]/60">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#191919]/60">
                 Let&apos;s connect
               </p>
 
-              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#FFFFFF] md:text-7xl">
+              <h2 className="mt-7 max-w-5xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] text-[#191919] md:text-7xl">
                 The right people
                 <br />
                 can change
@@ -329,7 +329,7 @@ export const AboutClient = () => {
 
               <a
                 href="/contact"
-                className="group mt-10 inline-flex items-center gap-3 rounded-full bg-[#D45539] px-7 py-4 text-sm font-medium text-[#FFFFFF]"
+                className="group mt-10 inline-flex items-center gap-3 rounded-full border border-[#D45539] bg-white px-7 py-4 text-sm font-medium text-[#D45539]"
               >
                 Talk to Antons
 
