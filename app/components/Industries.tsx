@@ -71,13 +71,18 @@ export default function Industries() {
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-5% 0px" }}
-                transition={{ duration: 0.7, delay: (index % 4) * 0.06, ease }}
+                transition={{
+                  duration: 0.7,
+                  delay: (index % 4) * 0.06,
+                  ease,
+                }}
                 className={tileClass}
               >
                 <span aria-hidden className={fillClass} />
 
                 <div className="relative flex items-start justify-between text-[#191919]/50 transition-colors duration-500 group-hover:text-white/60 group-focus-visible:text-white/60">
-                  <Icon size={22} strokeWidth={1.3} />
+                  {/* Only this icon size changed */}
+                  <Icon size={32} strokeWidth={1.3} />
 
                   <ArrowUpRight
                     size={18}
