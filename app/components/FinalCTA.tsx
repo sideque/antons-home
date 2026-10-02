@@ -10,7 +10,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#D45539] px-5 py-28 md:px-8 md:py-44"
+      className="relative overflow-hidden bg-white px-5 py-28 md:px-8 md:py-44"
     >
       {/* Decoration */}
       <div
@@ -29,7 +29,7 @@ export default function FinalCTA() {
         className="pointer-events-none absolute -bottom-52 -left-24 h-[520px] w-[520px] rounded-full border border-[#191919]/20"
       >
         {/* A single marker makes the slow rotation readable */}
-        <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#191919]/50" />
+        <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#D45539]" />
       </motion.div>
 
       <div className="relative mx-auto max-w-7xl">
@@ -40,7 +40,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.8 }}
           className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#191919]/60"
         >
-          <span className="h-px w-8 bg-[#191919]/30" />
+          <span className="h-px w-8 bg-[#D45539]" />
           Start a conversation
         </motion.p>
 
@@ -49,11 +49,11 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 1.1, ease }}
-          className="mt-8 max-w-5xl text-[clamp(3rem,9vw,8rem)] font-medium leading-[0.92] tracking-[-0.065em]"
+          className="mt-8 max-w-5xl text-[clamp(3rem,9vw,8rem)] font-medium leading-[0.92] tracking-[-0.065em] text-[#191919]"
         >
           The right people
           <br />
-          <span className="italic text-[#F08043]">are out there.</span>
+          <span className="italic text-[#D45539]">are out there.</span>
         </motion.h2>
 
         <motion.div
@@ -71,14 +71,14 @@ export default function FinalCTA() {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
             <Link
               href="/contact"
-              className="text-sm text-[#191919]/70 underline-offset-4 transition-colors hover:text-[#191919] hover:underline"
+              className="text-sm text-[#191919]/70 underline-offset-4 transition-colors hover:text-[#D45539] hover:underline"
             >
               Send an enquiry
             </Link>
 
             <a
               href="mailto:info@antons.ae"
-              className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#191919] px-7 py-4 text-sm font-medium text-[#F08043] transition duration-300 hover:scale-[1.02]"
+              className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#191919] px-7 py-4 text-sm font-medium text-white transition duration-300 hover:scale-[1.02]"
             >
               Talk to an expert
               <ArrowUpRight

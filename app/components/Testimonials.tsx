@@ -53,7 +53,7 @@ export default function Testimonials() {
   const testimonial = testimonials[active];
 
   return (
-    <section className="bg-[#191919] px-5 py-28 text-[#F08043] md:px-8 md:py-40">
+    <section className="bg-white px-5 py-28 text-[#191919] md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <motion.div
@@ -62,12 +62,12 @@ export default function Testimonials() {
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 1, ease }}
         >
-          <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#D45539]">
-            <span className="h-px w-8 bg-[#D45539]/40" />
+          <p className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-[#191919]/45">
+            <span className="h-px w-8 bg-[#F08043]" />
             Client perspective
           </p>
 
-          <h2 className="mt-7 max-w-2xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em]">
+          <h2 className="mt-7 max-w-2xl text-[clamp(2.6rem,5.5vw,5.5rem)] font-medium leading-[0.92] tracking-[-0.065em] text-[#191919]">
             Partnerships that
             <br />
             create
@@ -76,7 +76,7 @@ export default function Testimonials() {
         </motion.div>
 
         {/* Body */}
-        <div className="mt-16 grid gap-8 border-t border-[#F08043]/15 pt-10 md:mt-24 md:pt-12 lg:grid-cols-[0.7fr_1.3fr]">
+        <div className="mt-16 grid gap-8 border-t border-[#191919]/10 pt-10 md:mt-24 md:pt-12 lg:grid-cols-[0.7fr_1.3fr]">
           <div className="flex items-start justify-between lg:flex-col lg:justify-between">
             <Quote
               size={40}
@@ -85,7 +85,7 @@ export default function Testimonials() {
               className="text-[#D45539]"
             />
 
-            <p className="text-xs tracking-[0.2em] text-[#F08043]/50">
+            <p className="text-xs tracking-[0.2em] text-[#191919]/40">
               <span className="text-[#F08043]">{pad(active + 1)}</span>
               {" / "}
               {pad(testimonials.length)}
@@ -107,13 +107,16 @@ export default function Testimonials() {
                   exit="exit"
                   transition={{ duration: 0.5, ease }}
                 >
-                  <blockquote className="max-w-4xl text-2xl font-light leading-[1.35] tracking-tight md:text-4xl">
+                  <blockquote className="max-w-4xl text-2xl font-light leading-[1.35] tracking-tight text-[#191919] md:text-4xl">
                     &ldquo;{testimonial.quote}&rdquo;
                   </blockquote>
 
                   <figcaption className="mt-10">
-                    <p className="text-sm font-medium">{testimonial.name}</p>
-                    <p className="mt-1 text-sm text-[#F08043]/60">
+                    <p className="text-sm font-medium text-[#191919]">
+                      {testimonial.name}
+                    </p>
+
+                    <p className="mt-1 text-sm text-[#191919]/50">
                       {testimonial.role}, {testimonial.company}
                     </p>
                   </figcaption>
@@ -137,7 +140,7 @@ export default function Testimonials() {
                       className={`block h-px transition-all duration-500 ${
                         index === active
                           ? "w-12 bg-[#F08043]"
-                          : "w-6 bg-[#F08043]/30 group-hover:bg-[#F08043]/60"
+                          : "w-6 bg-[#191919]/20 group-hover:bg-[#F08043]/60"
                       }`}
                     />
                   </button>
@@ -149,7 +152,7 @@ export default function Testimonials() {
                   type="button"
                   onClick={() => step(-1)}
                   aria-label="Previous testimonial"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/30 transition-all duration-300 hover:bg-[#F08043] hover:text-[#191919]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#191919]/15 text-[#191919] transition-all duration-300 hover:border-[#F08043] hover:bg-[#F08043] hover:text-[#191919]"
                 >
                   <ArrowLeft size={17} />
                 </button>
@@ -158,7 +161,7 @@ export default function Testimonials() {
                   type="button"
                   onClick={() => step(1)}
                   aria-label="Next testimonial"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F08043]/30 transition-all duration-300 hover:bg-[#F08043] hover:text-[#191919]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#191919]/15 text-[#191919] transition-all duration-300 hover:border-[#F08043] hover:bg-[#F08043] hover:text-[#191919]"
                 >
                   <ArrowRight size={17} />
                 </button>

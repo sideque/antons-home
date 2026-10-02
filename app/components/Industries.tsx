@@ -34,7 +34,7 @@ export default function Industries() {
   return (
     <section
       id="industries"
-      className="bg-[#F08043] px-5 py-28 md:px-8 md:py-40"
+      className="bg-white px-5 py-28 md:px-8 md:py-40"
     >
       <div className="mx-auto max-w-7xl">
         {/* Header */}
