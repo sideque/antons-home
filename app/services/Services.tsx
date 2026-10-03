@@ -224,7 +224,7 @@ const Services = () => {
         <div className="absolute inset-0 bg-[#191919]/45" />
 
         <div className="absolute inset-0 flex items-end px-5 pb-10 md:items-center md:px-8 md:pb-0">
-          <p className="text-2xl font-medium tracking-[-0.03em] text-[#FFFFFF] md:text-4xl">
+          <p className="inline-flex rounded-full bg-[#F08043] px-6 py-3 text-2xl font-medium tracking-[-0.03em] text-[#191919] md:text-4xl">
             Talent built around your business.
           </p>
         </div>
