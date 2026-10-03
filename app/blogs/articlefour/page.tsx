@@ -484,7 +484,7 @@ export default function FintechUAEArticle() {
             duration: 0.8,
             ease,
           }}
-          className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#191919] px-6 py-14 text-[#FFFFFF] md:rounded-[3rem] md:px-12 md:py-20"
+          className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-[#D45539]/25 bg-[#D45539]/5 px-6 py-14 text-[#191919] md:rounded-[3rem] md:px-12 md:py-20"
         >
           <div className="flex flex-col justify-between gap-10 md:flex-row md:items-end">
             <div className="max-w-2xl">

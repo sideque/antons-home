@@ -341,11 +341,11 @@ export default function ArticleSixPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease }}
-          className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#111311] px-7 py-14 text-white md:rounded-[2.5rem] md:px-14 md:py-20"
+          className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-[#D45539]/25 bg-[#D45539]/5 px-7 py-14 text-[#191919] md:rounded-[2.5rem] md:px-14 md:py-20"
         >
           <div className="flex flex-col justify-between gap-10 md:flex-row md:items-end">
             <div className="max-w-2xl">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-white/35">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                 Antons Recruitment
               </p>
 
@@ -356,7 +356,7 @@ export default function ArticleSixPage() {
 
             <Link
               href="/contact"
-              className="group inline-flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition hover:bg-white/90"
+              className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#F08043] px-6 py-3.5 text-sm font-medium text-[#FFFFFF] transition hover:bg-[#D45539]"
             >
               Get in touch
               <ArrowUpRight

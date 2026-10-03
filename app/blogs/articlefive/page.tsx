@@ -600,8 +600,8 @@ export default function ArticleFivePage() {
                 </div>
 
                 {/* Checklist */}
-                <div className="mt-14 rounded-[1.5rem] bg-[#111311] p-7 text-white md:p-10">
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-white/40">
+               <div className="mt-14 rounded-[1.5rem] border border-[#D45539]/25 bg-[#D45539]/5 p-7 text-[#191919] md:p-10">
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                     Checklist
                   </p>
 
@@ -622,14 +622,14 @@ export default function ArticleFivePage() {
                     ].map((item) => (
                       <div
                         key={item}
-                        className="flex items-start gap-3 border-t border-white/10 pt-4"
+                        className="flex items-start gap-3 border-t border-[#191919]/10 pt-4"
                       >
                         <Check
                           size={16}
-                          className="mt-0.5 shrink-0 text-white/50"
+                          className="mt-0.5 shrink-0 text-[#D45539]"
                         />
 
-                        <span className="text-sm leading-6 text-white/65">
+                        <span className="text-sm leading-6 text-[#191919]/65">
                           {item}
                         </span>
                       </div>
@@ -674,10 +674,10 @@ export default function ArticleFivePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease }}
-            className="overflow-hidden rounded-[2rem] bg-[#111311] px-6 py-14 text-white md:rounded-[2.5rem] md:px-12 md:py-20"
+            className="overflow-hidden rounded-[2rem] border border-[#D45539]/25 bg-[#D45539]/5 px-6 py-14 text-[#191919] md:rounded-[2.5rem] md:px-12 md:py-20"
           >
             <div className="max-w-3xl">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-white/35">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                 Need support?
               </p>
 
@@ -687,7 +687,7 @@ export default function ArticleFivePage() {
                 your next team?
               </h2>
 
-              <p className="mt-7 max-w-xl text-sm leading-7 text-white/45 md:text-base">
+              <p className="mt-7 max-w-xl text-sm leading-7 text-[#191919]/55 md:text-base">
                 Whether you are building a new business or expanding an
                 existing team, Antons can help you connect with the right
                 talent across the GCC.
@@ -695,7 +695,7 @@ export default function ArticleFivePage() {
 
               <Link
                 href="/contact"
-                className="group mt-9 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition hover:bg-white/90"
+                className="group mt-9 inline-flex items-center gap-3 rounded-full bg-[#F08043] px-6 py-3.5 text-sm font-medium text-[#FFFFFF] transition hover:bg-[#D45539]"
               >
                 Talk to our team
 

@@ -80,9 +80,9 @@ const sections = [
 
 export default function BlogArticlePage() {
   return (
-    <main className="min-h-screen bg-white text-black">
+    <main className="min-h-screen bg-white text-[#191919]">
 
-      <section className="px-5 pb-16 pt-36 md:px-8 md:pb-24 md:pt-44">
+      <section className="bg-white px-5 pb-16 pt-36 md:px-8 md:pb-24 md:pt-44">
         <div className="mx-auto max-w-7xl">
 
           {/* Back */}
@@ -93,7 +93,7 @@ export default function BlogArticlePage() {
           >
             <Link
               href="/blogs"
-              className="group mb-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-black/40 transition-colors hover:text-black"
+              className="group mb-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#F08043] transition-colors hover:text-[#D45539]"
             >
               <ArrowLeft
                 size={14}
@@ -108,17 +108,17 @@ export default function BlogArticlePage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease }}
-            className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.2em] text-black/40"
+            className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] uppercase tracking-[0.2em]"
           >
-            <span>Recruitment</span>
+            <span className="text-[#F08043]">Recruitment</span>
 
-            <span className="h-1 w-1 rounded-full bg-black/20" />
+            <span className="h-1 w-1 rounded-full bg-[#F08043]" />
 
-            <span>18 Sep 2025</span>
+            <span className="text-[#191919]">18 Sep 2025</span>
 
-            <span className="h-1 w-1 rounded-full bg-black/20" />
+            <span className="h-1 w-1 rounded-full bg-[#F08043]" />
 
-            <span>4 mins read</span>
+            <span className="text-[#191919]">4 mins read</span>
           </motion.div>
 
           {/* Title */}
@@ -126,7 +126,7 @@ export default function BlogArticlePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.18, ease }}
-            className="mt-6 max-w-6xl text-[clamp(3rem,6.5vw,7rem)] font-light leading-[0.92] tracking-[-0.06em]"
+            className="mt-6 max-w-6xl text-[clamp(3rem,6.5vw,7rem)] font-light leading-[0.92] tracking-[-0.06em] text-[#D45539]"
           >
             5 Recruitment Challenges Dubai Tech Employers Face in 2025
           </motion.h1>
@@ -136,7 +136,7 @@ export default function BlogArticlePage() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="mt-8 max-w-2xl text-base leading-7 text-black/55 md:text-lg md:leading-8"
+            className="mt-8 max-w-2xl text-base leading-7 text-[#191919] md:text-lg md:leading-8"
           >
             The tech industry in Dubai is growing at record speed. From
             AI-driven solutions to cloud transformation, companies are racing
@@ -161,7 +161,7 @@ export default function BlogArticlePage() {
               delay: 0.4,
               ease,
             }}
-            className="relative mt-12 aspect-[16/9] overflow-hidden rounded-[2rem] bg-black/5 md:mt-16 md:rounded-[2.5rem]"
+            className="relative mt-12 aspect-[16/9] overflow-hidden rounded-[2rem] bg-white md:mt-16 md:rounded-[2.5rem]"
           >
             <Image
               src="/images/blogsImg/one.webp"
@@ -175,13 +175,13 @@ export default function BlogArticlePage() {
         </div>
       </section>
 
-      <section className="px-5 pb-24 md:px-8 md:pb-32">
+      <section className="bg-white px-5 pb-24 md:px-8 md:pb-32">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[190px_minmax(0,760px)] lg:gap-20">
 
           {/* Desktop article navigation */}
           <aside className="hidden lg:block">
             <div className="sticky top-32">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-black/35">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                 In this article
               </p>
 
@@ -190,7 +190,7 @@ export default function BlogArticlePage() {
                   <a
                     key={section.number}
                     href={`#section-${section.number}`}
-                    className="block text-xs leading-5 text-black/40 transition-colors hover:text-black"
+                    className="block text-xs leading-5 text-[#191919] transition-colors hover:text-[#D45539]"
                   >
                     {section.number} — {section.title}
                   </a>
@@ -210,19 +210,19 @@ export default function BlogArticlePage() {
               transition={{ duration: 0.7, ease }}
               className="mb-20"
             >
-              <p className="text-lg leading-8 text-black/65 md:text-xl md:leading-9">
+              <p className="text-lg leading-8 text-[#191919] md:text-xl md:leading-9">
                 Recruiting IT professionals in Dubai is not just about filling
                 roles; it&apos;s about competing in a global talent war while
                 also meeting local labour requirements.
               </p>
 
-              <p className="mt-6 text-base leading-8 text-black/55 md:text-lg md:leading-9">
+              <p className="mt-6 text-base leading-8 text-[#191919] md:text-lg md:leading-9">
                 For technology employers, understanding the recruitment
                 landscape is essential to building teams that can support
                 sustainable growth.
               </p>
 
-              <p className="mt-6 text-base leading-8 text-black/55 md:text-lg md:leading-9">
+              <p className="mt-6 text-base leading-8 text-[#191919] md:text-lg md:leading-9">
                 Here are five of the key recruitment challenges Dubai tech
                 employers are facing.
               </p>
@@ -256,7 +256,7 @@ export default function BlogArticlePage() {
 
                   {/* Number */}
                   <div className="mb-7 flex items-center gap-4">
-                    <span className="text-xs font-medium tracking-[0.15em] text-black/30">
+                    <span className="text-xs font-medium tracking-[0.15em] text-[#F08043]">
                       {section.number}
                     </span>
 
@@ -264,7 +264,7 @@ export default function BlogArticlePage() {
                   </div>
 
                   {/* Heading */}
-                  <h2 className="max-w-3xl text-3xl font-light leading-[1.05] tracking-[-0.04em] md:text-5xl">
+                  <h2 className="max-w-3xl text-3xl font-light leading-[1.05] tracking-[-0.04em] text-[#D45539] md:text-5xl">
                     {section.title}
                   </h2>
 
@@ -273,16 +273,16 @@ export default function BlogArticlePage() {
                     {section.paragraphs.map((paragraph) => (
                       <p
                         key={paragraph}
-                        className="text-base leading-8 text-black/60 md:text-lg md:leading-9"
+                        className="text-base leading-8 text-[#191919] md:text-lg md:leading-9"
                       >
                         {paragraph}
                       </p>
                     ))}
                   </div>
 
-                  {/* Solution box */}
-                  <div className="mt-9 rounded-[1.75rem] bg-[#111311] p-7 text-white md:p-9">
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-white/35">
+                  {/* Solution box (white, no border) */}
+                  <div className="mt-9 bg-white">
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                       What employers can do
                     </p>
 
@@ -290,9 +290,9 @@ export default function BlogArticlePage() {
                       {section.points.map((point) => (
                         <li
                           key={point}
-                          className="flex gap-4 text-sm leading-6 text-white/70 md:text-base"
+                          className="flex gap-4 text-sm leading-6 text-[#191919] md:text-base"
                         >
-                          <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-white/50" />
+                          <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#F08043]" />
 
                           <span>{point}</span>
                         </li>
@@ -316,16 +316,16 @@ export default function BlogArticlePage() {
               transition={{ duration: 0.75, ease }}
               className="mt-24 border-t border-black/10 pt-16 md:mt-32 md:pt-20"
             >
-              <p className="text-[10px] uppercase tracking-[0.2em] text-black/35">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                 Conclusion
               </p>
 
-              <h2 className="mt-5 text-3xl font-light leading-tight tracking-[-0.04em] md:text-5xl">
+              <h2 className="mt-5 text-3xl font-light leading-tight tracking-[-0.04em] text-[#D45539] md:text-5xl">
                 Building stronger technology teams in Dubai
               </h2>
 
               <div className="mt-8 space-y-6">
-                <p className="text-base leading-8 text-black/60 md:text-lg md:leading-9">
+                <p className="text-base leading-8 text-[#191919] md:text-lg md:leading-9">
                   Dubai&apos;s technology sector continues to evolve rapidly.
                   Organisations facing AI talent shortages, lengthy hiring
                   processes, retention challenges, Emiratization requirements
@@ -333,7 +333,7 @@ export default function BlogArticlePage() {
                   strategies designed for the realities of today&apos;s market.
                 </p>
 
-                <p className="text-base leading-8 text-black/60 md:text-lg md:leading-9">
+                <p className="text-base leading-8 text-[#191919] md:text-lg md:leading-9">
                   A thoughtful combination of strong recruitment processes,
                   technology, employee development and local market expertise
                   can help businesses build teams capable of supporting their
@@ -350,7 +350,7 @@ export default function BlogArticlePage() {
           CTA
       ========================================================= */}
 
-      <section className="px-5 pb-24 md:px-8 md:pb-32">
+      <section className="bg-white px-5 pb-24 md:px-8 md:pb-32">
         <motion.div
           initial={{
             opacity: 0,
@@ -368,26 +368,26 @@ export default function BlogArticlePage() {
             duration: 0.8,
             ease,
           }}
-          className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#111311] px-7 py-14 text-white md:rounded-[2.5rem] md:px-14 md:py-20"
+          className="mx-auto max-w-7xl overflow-hidden bg-white px-0 py-14 md:py-20"
         >
           <div className="max-w-3xl">
 
-            <p className="text-[10px] uppercase tracking-[0.2em] text-white/35">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
               Recruitment solutions
             </p>
 
-            <h2 className="mt-5 text-4xl font-light leading-[1.05] tracking-[-0.045em] md:text-6xl">
+            <h2 className="mt-5 text-4xl font-light leading-[1.05] tracking-[-0.045em] text-[#D45539] md:text-6xl">
               Need help building your next team?
             </h2>
 
-            <p className="mt-6 max-w-xl text-sm leading-7 text-white/50 md:text-base md:leading-8">
+            <p className="mt-6 max-w-xl text-sm leading-7 text-[#191919] md:text-base md:leading-8">
               Connect with Antons and discover how we can help you find the
               talent your business needs.
             </p>
 
             <Link
               href="/contact"
-              className="group mt-9 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-medium text-black transition-all duration-300 hover:bg-white/90"
+              className="group mt-9 inline-flex items-center gap-2 rounded-full border border-[#D45539] bg-white px-6 py-3.5 text-sm font-medium text-[#D45539] transition-all duration-300 hover:border-[#F08043] hover:text-[#F08043]"
             >
               Talk to our team
 
@@ -405,7 +405,7 @@ export default function BlogArticlePage() {
           RELATED INSIGHTS
       ========================================================= */}
 
-      <section className="border-t border-black/10 px-5 py-20 md:px-8 md:py-28">
+      <section className="border-t border-black/10 bg-white px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-7xl">
 
           <motion.div
@@ -425,11 +425,11 @@ export default function BlogArticlePage() {
               ease,
             }}
           >
-            <p className="text-[10px] uppercase tracking-[0.2em] text-black/35">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
               Continue reading
             </p>
 
-            <h2 className="mt-4 text-4xl font-light tracking-[-0.04em] md:text-5xl">
+            <h2 className="mt-4 text-4xl font-light tracking-[-0.04em] text-[#D45539] md:text-5xl">
               Related Insights
             </h2>
           </motion.div>
@@ -439,13 +439,13 @@ export default function BlogArticlePage() {
           <div className="mt-10">
             <Link
               href="/blogs"
-              className="group inline-flex items-center gap-2 text-sm text-black/60 transition-colors hover:text-black"
+              className="group inline-flex items-center gap-2 text-sm text-[#191919] transition-colors hover:text-[#D45539]"
             >
               View all insights
 
               <ArrowUpRight
                 size={15}
-                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                className="text-[#F08043] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
             </Link>
           </div>
