@@ -78,9 +78,10 @@ export default function FinalCTA() {
 
             <a
               href="mailto:info@antons.ae"
-              className="group inline-flex w-fit items-center gap-3 rounded-full bg-[#191919] px-7 py-4 text-sm font-medium text-white transition duration-300 hover:scale-[1.02]"
+              className="group inline-flex w-fit items-center gap-3 rounded-full border border-[#F08043] bg-[#F08043] px-7 py-4 text-sm font-medium text-[#191919] transition duration-300 hover:scale-[1.02] hover:border-[#D45539] hover:bg-[#D45539]"
             >
               Talk to an expert
+
               <ArrowUpRight
                 size={18}
                 className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1"
