@@ -34,9 +34,9 @@ const relatedArticles = [
 
 export default function ArticleSixPage() {
   return (
-    <main className="min-h-screen bg-[#f7f7f4] text-[#111311]">
+    <main className="min-h-screen bg-white text-[#191919]">
       {/* HERO */}
-      <section className="px-5 pb-16 pt-32 md:px-8 md:pb-24 md:pt-44">
+      <section className="bg-white px-5 pb-16 pt-32 md:px-8 md:pb-24 md:pt-44">
         <div className="mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -46,7 +46,7 @@ export default function ArticleSixPage() {
           >
             <Link
               href="/blogs"
-              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-black/45 transition hover:text-black"
+              className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#F08043] transition hover:text-[#D45539]"
             >
               <ArrowLeft
                 size={14}
@@ -62,23 +62,23 @@ export default function ArticleSixPage() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.1, ease }}
-                className="mb-6 flex flex-wrap items-center gap-3 text-[11px] uppercase tracking-[0.18em] text-black/45"
+                className="mb-6 flex flex-wrap items-center gap-3 text-[11px] uppercase tracking-[0.18em]"
               >
-                <span>Job Market</span>
-                <span className="h-1 w-1 rounded-full bg-black/25" />
-                <span>25 Mar 2024</span>
-                <span className="h-1 w-1 rounded-full bg-black/25" />
-                <span>5 mins read</span>
+                <span className="text-[#F08043]">Job Market</span>
+                <span className="h-1 w-1 rounded-full bg-[#F08043]" />
+                <span className="text-[#191919]">25 Mar 2024</span>
+                <span className="h-1 w-1 rounded-full bg-[#F08043]" />
+                <span className="text-[#191919]">5 mins read</span>
               </motion.div>
 
               <motion.h1
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.18, ease }}
-                className="max-w-5xl text-[clamp(2.7rem,6vw,6rem)] font-light leading-[0.95] tracking-[-0.055em]"
+                className="max-w-5xl text-[clamp(2.7rem,6vw,6rem)] font-light leading-[0.95] tracking-[-0.055em] text-[#D45539]"
               >
                 Navigating the Job Market in Dubai:
-                <span className="block text-black/45">
+                <span className="block text-[#F08043]">
                   An Overview for Newcomers (2024–2025)
                 </span>
               </motion.h1>
@@ -88,7 +88,7 @@ export default function ArticleSixPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease }}
-              className="max-w-lg text-base leading-7 text-black/55 lg:pb-2 lg:text-lg"
+              className="max-w-lg text-base leading-7 text-[#191919] lg:pb-2 lg:text-lg"
             >
               Dubai’s job market is a vibrant and dynamic landscape, offering
               opportunities across a wide range of sectors. As the city
@@ -102,7 +102,7 @@ export default function ArticleSixPage() {
             initial={{ opacity: 0, y: 35, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1, delay: 0.4, ease }}
-            className="relative mt-14 aspect-[16/8] overflow-hidden rounded-[2rem] bg-black/5 md:mt-20 md:rounded-[2.5rem]"
+            className="relative mt-14 aspect-[16/8] overflow-hidden rounded-[2rem] bg-white md:mt-20 md:rounded-[2.5rem]"
           >
             <Image
               src="/images/blogsImg/jobmarket.webp"
@@ -117,7 +117,7 @@ export default function ArticleSixPage() {
       </section>
 
       {/* ARTICLE */}
-      <article className="px-5 pb-24 md:px-8 md:pb-32">
+      <article className="bg-white px-5 pb-24 md:px-8 md:pb-32">
         <div className="mx-auto max-w-3xl">
           {/* INTRO */}
           <motion.section
@@ -126,14 +126,14 @@ export default function ArticleSixPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7, ease }}
           >
-            <p className="text-xl font-normal leading-8 text-black/75 md:text-2xl md:leading-9">
+            <p className="text-xl font-normal leading-8 text-[#191919] md:text-2xl md:leading-9">
               Dubai’s job market is a vibrant and dynamic landscape, offering a
               plethora of opportunities across various sectors. As we move into
               2024 and look towards 2025, the city’s economic growth continues
               to create opportunities for professionals from around the world.
             </p>
 
-            <p className="mt-7 text-base leading-8 text-black/60 md:text-lg">
+            <p className="mt-7 text-base leading-8 text-[#191919] md:text-lg">
               For newcomers, understanding the market, identifying growing
               sectors and preparing for the expectations of employers can make
               the transition into Dubai’s professional environment much easier.
@@ -313,17 +313,17 @@ export default function ArticleSixPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7, ease }}
-            className="mt-20 border-t border-black/10 pt-12"
+            className="mt-20 border-t border-[#191919]/10 pt-12"
           >
-            <p className="text-[10px] uppercase tracking-[0.2em] text-black/35">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
               Conclusion
             </p>
 
-            <h2 className="mt-5 text-3xl font-light tracking-[-0.04em] md:text-4xl">
+            <h2 className="mt-5 text-3xl font-light tracking-[-0.04em] text-[#D45539] md:text-4xl">
               Building a career in Dubai starts with understanding the market.
             </h2>
 
-            <p className="mt-7 text-base leading-8 text-black/60 md:text-lg">
+            <p className="mt-7 text-base leading-8 text-[#191919] md:text-lg">
               Dubai continues to offer opportunities across a diverse range of
               industries. For newcomers, understanding the market, preparing
               effectively, developing relevant skills and building professional
@@ -369,25 +369,25 @@ export default function ArticleSixPage() {
       </section>
 
       {/* RELATED */}
-      <section className="px-5 pb-24 md:px-8 md:pb-32">
+      <section className="bg-white px-5 pb-24 md:px-8 md:pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-end justify-between gap-6">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-black/35">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-[#F08043]">
                 More insights
               </p>
 
-              <h2 className="mt-4 text-3xl font-light tracking-[-0.04em] md:text-5xl">
+              <h2 className="mt-4 text-3xl font-light tracking-[-0.04em] text-[#D45539] md:text-5xl">
                 Related Insights
               </h2>
             </div>
 
             <Link
               href="/blogs"
-              className="hidden items-center gap-2 text-sm text-black/55 transition hover:text-black sm:flex"
+              className="hidden items-center gap-2 text-sm text-[#191919] transition hover:text-[#D45539] sm:flex"
             >
               View all
-              <ArrowUpRight size={15} />
+              <ArrowUpRight size={15} className="text-[#F08043]" />
             </Link>
           </div>
 
@@ -405,7 +405,7 @@ export default function ArticleSixPage() {
                 }}
               >
                 <Link href={article.href} className="group block">
-                  <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] bg-black/5">
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] bg-white">
                     <Image
                       src={article.image}
                       alt={article.title}
@@ -416,19 +416,19 @@ export default function ArticleSixPage() {
                   </div>
 
                   <div className="mt-5">
-                    <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.16em] text-black/35">
+                    <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.16em] text-[#F08043]">
                       <span>{article.category}</span>
-                      <span className="h-1 w-1 rounded-full bg-black/20" />
-                      <span>{article.date}</span>
+                      <span className="h-1 w-1 rounded-full bg-[#F08043]" />
+                      <span className="text-[#191919]">{article.date}</span>
                     </div>
 
-                    <h3 className="mt-3 text-xl font-light leading-snug tracking-[-0.025em] transition group-hover:text-black/60">
+                    <h3 className="mt-3 text-xl font-light leading-snug tracking-[-0.025em] text-[#D45539] transition group-hover:text-[#F08043]">
                       {article.title}
                     </h3>
 
-                    <span className="mt-5 inline-flex items-center gap-2 text-xs text-black/45">
+                    <span className="mt-5 inline-flex items-center gap-2 text-xs text-[#191919]">
                       Read article
-                      <ArrowUpRight size={14} />
+                      <ArrowUpRight size={14} className="text-[#F08043]" />
                     </span>
                   </div>
                 </Link>
@@ -456,19 +456,19 @@ function ArticleSection({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-10% 0px" }}
       transition={{ duration: 0.7, ease }}
-      className="mt-20 border-t border-black/10 pt-10"
+      className="mt-20 border-t border-[#191919]/10 pt-10"
     >
       <div className="flex gap-5">
-        <span className="pt-1 text-xs tracking-[0.15em] text-black/30">
+        <span className="pt-1 text-xs tracking-[0.15em] text-[#F08043]">
           {number}
         </span>
 
         <div className="flex-1">
-          <h2 className="text-3xl font-light tracking-[-0.04em] md:text-4xl">
+          <h2 className="text-3xl font-light tracking-[-0.04em] text-[#D45539] md:text-4xl">
             {title}
           </h2>
 
-          <div className="article-content mt-7 text-base leading-8 text-black/60 md:text-lg">
+          <div className="article-content mt-7 text-base leading-8 text-[#191919] md:text-lg">
             {children}
           </div>
         </div>
