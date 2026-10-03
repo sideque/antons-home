@@ -2,6 +2,12 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const links = [
   { label: "About", href: "/about" },
@@ -13,8 +19,26 @@ const links = [
 ];
 
 const socialLinks = [
-  { label: "LinkedIn", href: "#" },
-  { label: "Instagram", href: "#" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/antons-recruitmment-agency",
+    icon: FaLinkedinIn,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/antonsrecruitmentagency",
+    icon: FaInstagram,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/antonsrecruitmentagency",
+    icon: FaFacebookF,
+  },
+  {
+    label: "X",
+    href: "https://x.com/Antons_UAE",
+    icon: FaXTwitter,
+  },
 ];
 
 export default function Footer() {
@@ -104,22 +128,33 @@ export default function Footer() {
               Connect
             </p>
 
-            <div className="mt-4 flex flex-col gap-3">
-              {socialLinks.map((social) => (
+           <div className="mt-4 flex flex-col gap-3">
+            {socialLinks.map((social) => {
+              const Icon = social.icon;
+
+              return (
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex w-fit items-center gap-2 text-sm text-[#191919]/70 transition hover:text-[#191919]"
                 >
-                  {social.label}
+                  <Icon
+                    size={16}
+                    className="transition-transform duration-300 group-hover:scale-110"
+                  />
+
+                  <span>{social.label}</span>
 
                   <ArrowUpRight
                     size={14}
                     className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                   />
                 </a>
-              ))}
-            </div>
+              );
+            })}
+        </div>
           </motion.div>
         </div>
 

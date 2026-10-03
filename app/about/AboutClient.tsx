@@ -329,7 +329,7 @@ export const AboutClient = () => {
 
               <a
                 href="/contact"
-                className="group mt-10 inline-flex items-center gap-3 rounded-full border border-[#D45539] bg-white px-7 py-4 text-sm font-medium text-[#D45539]"
+                className="group mt-10 inline-flex items-center gap-3 rounded-full border border-[#F08043] bg-[#F08043] px-7 py-4 text-sm font-medium text-[#191919]"
               >
                 Talk to Antons
 

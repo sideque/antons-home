@@ -113,7 +113,7 @@ export default function Hero() {
           >
             <div className="group absolute inset-0 overflow-hidden rounded-[2rem] border border-[#191919]/10 bg-white">
               <Image
-                src="/images/aboutImg/conMeeting.webp"
+                src="/images/aboutImg/homeI.webp"
                 alt="Antons consultants meeting with a client in a modern GCC office"
                 fill
                 priority

@@ -119,7 +119,7 @@ export default function About() {
               />
 
               <img
-                src="/images/Logo.webp"
+                src="/images/Logo2.webp"
                 alt=""
                 aria-hidden
                 className={`absolute right-6 top-6 h-20 w-20 object-contain transition duration-500 group-hover:scale-110 ${card.logo}`}
