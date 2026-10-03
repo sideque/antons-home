@@ -249,121 +249,121 @@ function ContactForm() {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 26 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-8% 0px" }}
-      transition={{ duration: 0.9, ease }}
-      className="rounded-[2rem] border border-[#191919]/10 bg-white p-6 sm:p-8 md:p-12"
-    >
-      <h3 className="text-3xl font-medium tracking-[-0.04em] md:text-4xl">
-        Tell us what you need.
-      </h3>
+  <motion.div
+    initial={{ opacity: 0, y: 26 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-8% 0px" }}
+    transition={{ duration: 0.9, ease }}
+    className="rounded-[2rem] border border-[#D45539]/25 bg-[#D45539]/5 p-6 text-[#191919] sm:p-8 md:p-12"
+  >
+    <h3 className="text-3xl font-medium tracking-[-0.04em] md:text-4xl">
+      Tell us what you need.
+    </h3>
 
-      <form onSubmit={handleSubmit} className="mt-10 space-y-5">
+    <form onSubmit={handleSubmit} className="mt-10 space-y-5">
 
-        <div className="grid gap-5 sm:grid-cols-2">
-          {fields.map((field) => (
-            <div key={field.id}>
-              <label htmlFor={field.id} className={labelClass}>
-                {field.label}
-              </label>
+      <div className="grid gap-5 sm:grid-cols-2">
+        {fields.map((field) => (
+          <div key={field.id}>
+            <label htmlFor={field.id} className={labelClass}>
+              {field.label}
+            </label>
 
-              <input
-                id={field.id}
-                name={field.id}
-                type={field.type}
-                placeholder={field.placeholder}
-                autoComplete={field.autoComplete}
-                required={field.required}
-                className={`${inputClass} h-14`}
-              />
-            </div>
-          ))}
-        </div>
-
-        <div>
-          <label htmlFor="service" className={labelClass}>
-            Required service
-          </label>
-
-          <div className="relative">
-            <select
-              id="service"
-              name="service"
-              defaultValue=""
-              className={`${inputClass} h-14 cursor-pointer appearance-none pr-12 text-[#191919]/70`}
-            >
-              <option
-                value=""
-                disabled
-                className="bg-white"
-              >
-                Select a service
-              </option>
-
-              {services.map((service) => (
-                <option
-                  key={service.value}
-                  value={service.value}
-                  className="bg-white"
-                >
-                  {service.label}
-                </option>
-              ))}
-            </select>
-
-            <ChevronDown
-              size={17}
-              strokeWidth={1.5}
-              aria-hidden
-              className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#F08043]"
+            <input
+              id={field.id}
+              name={field.id}
+              type={field.type}
+              placeholder={field.placeholder}
+              autoComplete={field.autoComplete}
+              required={field.required}
+              className={`${inputClass} h-14`}
             />
           </div>
-        </div>
+        ))}
+      </div>
 
-        <div>
-          <label htmlFor="message" className={labelClass}>
-            Tell us about your requirement
-          </label>
+      <div>
+        <label htmlFor="service" className={labelClass}>
+          Required service
+        </label>
 
-          <textarea
-            id="message"
-            name="message"
-            rows={5}
-            required
-            placeholder="Tell us a little about your hiring requirement..."
-            className={`${inputClass} resize-none py-4`}
+        <div className="relative">
+          <select
+            id="service"
+            name="service"
+            defaultValue=""
+            className={`${inputClass} h-14 cursor-pointer appearance-none pr-12 text-[#191919]/70`}
+          >
+            <option
+              value=""
+              disabled
+              className="bg-white"
+            >
+              Select a service
+            </option>
+
+            {services.map((service) => (
+              <option
+                key={service.value}
+                value={service.value}
+                className="bg-white"
+              >
+                {service.label}
+              </option>
+            ))}
+          </select>
+
+          <ChevronDown
+            size={17}
+            strokeWidth={1.5}
+            aria-hidden
+            className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#F08043]"
           />
         </div>
+      </div>
 
-        <motion.button
-          type="submit"
-          whileHover={{ scale: 1.015 }}
-          whileTap={{ scale: 0.99 }}
-          transition={{ duration: 0.3, ease }}
-          className="group flex w-full items-center justify-center gap-3 rounded-full border border-[#D45539] bg-white px-6 py-4 text-sm font-medium text-[#D45539]"
-        >
-          Send enquiry
+      <div>
+        <label htmlFor="message" className={labelClass}>
+          Tell us about your requirement
+        </label>
 
-          <Send
-            size={16}
-            className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1"
-          />
-        </motion.button>
+        <textarea
+          id="message"
+          name="message"
+          rows={5}
+          required
+          placeholder="Tell us a little about your hiring requirement..."
+          className={`${inputClass} resize-none py-4`}
+        />
+      </div>
 
-        <p
-          role="status"
-          className="min-h-[1.5rem] text-xs leading-6 text-[#191919]/55"
-        >
-          {submitted
-            ? "Your email app should open with your enquiry ready to send. If it doesn't, write to info@antons.ae."
-            : ""}
-        </p>
+      <motion.button
+        type="submit"
+        whileHover={{ scale: 1.015 }}
+        whileTap={{ scale: 0.99 }}
+        transition={{ duration: 0.3, ease }}
+        className="group flex w-full items-center justify-center gap-3 rounded-full border border-[#F08043] bg-[#F08043] px-6 py-4 text-sm font-medium text-[#191919] transition hover:border-[#D45539] hover:bg-[#D45539]"
+      >
+        Send enquiry
 
-      </form>
-    </motion.div>
-  );
+        <Send
+          size={16}
+          className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1"
+        />
+      </motion.button>
+
+      <p
+        role="status"
+        className="min-h-[1.5rem] text-xs leading-6 text-[#191919]/55"
+      >
+        {submitted
+          ? "Your email app should open with your enquiry ready to send. If it doesn't, write to info@antons.ae."
+          : ""}
+      </p>
+
+    </form>
+  </motion.div>
+);
 }
 
 /* ============================ MAP VISUAL ============================ */

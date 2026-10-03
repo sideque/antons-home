@@ -244,9 +244,9 @@ export const Careers = () => {
               </p>
 
               <a
-                href="/" //careers/jobsearch
+                href="/"
                 rel="noreferrer"
-                className="group mt-9 inline-flex items-center gap-3 rounded-full border border-[#191919] bg-white px-7 py-4 text-sm font-medium text-[#191919] transition hover:scale-[1.02] hover:border-[#D45539] hover:text-[#D45539]"
+                className="group mt-9 inline-flex items-center gap-3 rounded-full border border-[#F08043] bg-[#F08043] px-7 py-4 text-sm font-medium text-[#191919] transition hover:scale-[1.02] hover:border-[#D45539] hover:bg-[#D45539]"
               >
                 Upload your resume
 
