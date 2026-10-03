@@ -234,7 +234,7 @@ export const AboutClient = () => {
         <div className="absolute inset-0 bg-[#191919]/35" />
 
         <div className="absolute inset-0 flex items-end px-5 pb-10 md:items-center md:px-8 md:pb-0">
-          <p className="text-2xl font-medium tracking-[-0.03em] text-[#191919] md:text-4xl">
+          <p className="inline-flex items-center rounded-full bg-[#F08043] px-7 py-4 text-2xl font-medium tracking-[-0.03em] text-[#191919] md:text-4xl">
             Connecting talent with ambition.
           </p>
         </div>
